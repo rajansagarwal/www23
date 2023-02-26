@@ -10,6 +10,7 @@ import TextCard from "@/components/TextCard";
 import ImageCard from "@/components/ImageCard";
 import FullImage from "@/components/FullImage";
 import Double from "@/components/Double";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,11 @@ export default function Home() {
   const router = useRouter();
   return (
     <main>
+      <Head>
+        <title>Rajan Agarwal</title>
+        <meta name="description" content="Rajan Agarwal - 17 year-old Maker of Things." />
+        <link rel="icon" href="https://em-content.zobj.net/thumbs/160/apple/81/seedling_1f331.png" />
+      </Head>
       <Grid>
         <Grid.Container
           gap={2}
@@ -54,23 +60,29 @@ export default function Home() {
             tag="Software Engineering"
             image="https://z.rajan.sh/cs-dashboard.png"
           />
+          <Contact />
           <ImageCard
             name="The Platonist"
             description="Abstract Novel Interpretation of the Works of Plato"
             image="https://z.rajan.sh/collection.png"
           />
+          <FullImage name="Photography" image="https://z.rajan.sh/ccc.jpg" />
           <ImageCard
             name="Fleet"
             description="Evolutionary Game Theory Algorithm"
             image="https://z.rajan.sh/EGT.png"
           />
-          <FullImage name="Photography" image="https://z.rajan.sh/ccc.jpg" />
+          <FullImage name="Photography" image="https://z.rajan.sh/aaa.jpg" />
           <ImageCard
             name="Centric"
             description="Medical data aggregation, built on custom chain"
             image="https://z.rajan.sh/bloom.png"
           />
-          <FullImage name="Photography" image="https://z.rajan.sh/aaa.jpg" />
+          <ImageCard
+            name="Hack Club Apply"
+            description="Redesigned Application, 1M+ Reach; 7K Active"
+            image="https://z.rajan.sh/hcapply.png"
+          />
         </Grid.Container>
       </Grid>
       <br />
