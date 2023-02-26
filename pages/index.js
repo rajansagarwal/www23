@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import { Grid, Tabs, Text } from "@geist-ui/react";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Card from "@/components/Card";
@@ -11,18 +11,24 @@ import ImageCard from "@/components/ImageCard";
 import FullImage from "@/components/FullImage";
 import Double from "@/components/Double";
 import Contact from "@/components/Contact";
-import KnowledgeGraph from "@/components/KnowledgeGraph";
+// import KnowledgeGraph from "@/components/KnowledgeGraph";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
   return (
-    <main suppressHydrationWarning>
+    <main>
       <Head>
         <title>Rajan Agarwal</title>
-        <meta name="description" content="Rajan Agarwal - 17 year-old Maker of Things." />
-        <link rel="icon" href="https://em-content.zobj.net/thumbs/160/apple/81/seedling_1f331.png" />
+        <meta
+          name="description"
+          content="Rajan Agarwal - 17 year-old Maker of Things."
+        />
+        <link
+          rel="icon"
+          href="https://em-content.zobj.net/thumbs/160/apple/81/seedling_1f331.png"
+        />
       </Head>
       <Grid>
         <Grid.Container
@@ -85,7 +91,10 @@ export default function Home() {
             description="Raising $20K with ChoiceDAO"
             image="https://z.rajan.sh/cdao.png"
           />
-          <FullImage name="First Robot (2016)" image="https://z.rajan.sh/robot.jpg" />
+          <FullImage
+            name="First Robot (2016)"
+            image="https://z.rajan.sh/robot.jpg"
+          />
           <ImageCard
             name="Hack Club Apply"
             description="Redesigned Application, 1M+ Reach; 7K Active"

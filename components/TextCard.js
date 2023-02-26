@@ -15,6 +15,7 @@ export default function TextCard({
       className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
       style={{
         height: "20em",
+        overflow: 'hidden',
         width: "25em",
       }}
     >
