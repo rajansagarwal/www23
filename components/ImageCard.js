@@ -15,7 +15,19 @@ export default function ImageCard({ name, description, image, link }) {
           <h4 className="font-serif-variation mt-3 mb-3 font-serif text-2xl text-white font-light md:text-2xl lg:text-3xl">
             {name}
           </h4>
-          <p className="text-neutral-400 text-sm">
+          <p
+            className="text-neutral-400 text-sm line-clamp-1"
+            style={{
+              textOverflow: "ellipsis",
+              overflow: "hidden",
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
+              wordWrap: "break-word",
+              maxHeight: "3.6em",
+              lineHeight: "1.8em",
+            }}
+          >
             <span>{description}</span>
           </p>
         </div>
