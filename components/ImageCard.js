@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
+import ReactMarkdown from "react-markdown";
 
 export default function ImageCard({ name, description, image, link }) {
   return (
@@ -28,7 +29,7 @@ export default function ImageCard({ name, description, image, link }) {
               lineHeight: "1.8em",
             }}
           >
-            <span>{description}</span>
+            {description}
           </p>
         </div>
         <Image

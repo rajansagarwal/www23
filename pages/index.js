@@ -11,13 +11,14 @@ import ImageCard from "@/components/ImageCard";
 import FullImage from "@/components/FullImage";
 import Double from "@/components/Double";
 import Contact from "@/components/Contact";
+import KnowledgeGraph from "@/components/KnowledgeGraph";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
   return (
-    <main>
+    <main suppressHydrationWarning>
       <Head>
         <title>Rajan Agarwal</title>
         <meta name="description" content="Rajan Agarwal - 17 year-old Maker of Things." />
@@ -40,7 +41,7 @@ export default function Home() {
           <TextCard
             name="Welcome"
             tag={"BREWING SOMETHING NEW"}
-            description="I'm Rajan — I build with AI and Full Stack to create a more interconnected internet. Previously, I've worked in Software Engineering at Camp Social and Hack Club, as well as was a Founding Engineer of Arterial."
+            description="I'm Rajan — I build with AI and Full Stack to create a more interconnected internet. Previously, I've worked in Software Engineering at [Camp Social](https://camp.social) and [Hack Club](https://hackclub.com]), as well as was a Founding Engineer of [Arterial](https://arterial.design)."
           />
           <ImageCard
             name="Research Aggregation"
@@ -50,7 +51,7 @@ export default function Home() {
           <FullImage name="Photography" image="https://z.rajan.sh/eee.jpg" />
           <Double
             name="Knowledge Repositories"
-            description="A more thoughtful & community-first approach to shared knowledge. Platforms as such have changed the way that I understand the communication of information that, throughout my life, often felt standard."
+            description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
             tag="Communities of Knowledge"
             image="https://z.rajan.sh/homepage-aire.png"
           />
@@ -73,16 +74,34 @@ export default function Home() {
             image="https://z.rajan.sh/EGT.png"
           />
           <FullImage name="Photography" image="https://z.rajan.sh/aaa.jpg" />
-          <ImageCard
-            name="Centric"
-            description="Medical data aggregation, built on custom chain"
-            image="https://z.rajan.sh/bloom.png"
+          <Double
+            name="Etherealism: Visual Interpretations"
+            description="A text-to-image GAN built from scratch that interprets key words, emotions and concepts from poetry and creates a symbolic image around these varying interpretations."
+            tag="Software Engineering"
+            image="https://z.rajan.sh/generated.png"
           />
+          <ImageCard
+            name="Equitable Access"
+            description="Raising $20K with ChoiceDAO"
+            image="https://z.rajan.sh/cdao.png"
+          />
+          <FullImage name="First Robot (2016)" image="https://z.rajan.sh/robot.jpg" />
           <ImageCard
             name="Hack Club Apply"
             description="Redesigned Application, 1M+ Reach; 7K Active"
             image="https://z.rajan.sh/hcapply.png"
           />
+          <TextCard
+            name="Fourier Analysis of Earthquakes"
+            tag={"Efficient Building Designs"}
+            description="By deriving a new equation for the Discrete Fourier Transform in the context of a seismic wave, in complement to the algorithm that plotted particle velocities as a function of frequency, direct correlations could be discovered between the movement, defined as HV SR×Rate, and the distance from the epicenter."
+          />
+          <ImageCard
+            name="Centric"
+            description="Medical data aggregation, built on custom chain"
+            image="https://z.rajan.sh/bloom.png"
+          />
+          <FullImage name="Photography" image="https://z.rajan.sh/eee.jpg" />
         </Grid.Container>
       </Grid>
       <br />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
+import ReactMarkdown from "react-markdown";
 
 export default function TextCard({
   name,
@@ -34,23 +35,22 @@ export default function TextCard({
               </p>
             </>
           ) : null}
-          <p
+          <div
             className="text-neutral-400 text-sm line-clamp-1"
             style={{
               textOverflow: "ellipsis",
               overflow: "hidden",
               display: "-webkit-box",
-              WebkitLineClamp: 7,
+              WebkitLineClamp: 5,
               WebkitBoxOrient: "vertical",
               wordWrap: "break-word",
-              maxHeight: "12.6em",
+              maxHeight: "9.0em",
               lineHeight: "1.8em",
             }}
+            suppressHydrationWarning
           >
-            <span>
-              {description}
-            </span>
-          </p>
+            <ReactMarkdown>{description}</ReactMarkdown>
+          </div>
         </div>
       </div>
     </Grid>
