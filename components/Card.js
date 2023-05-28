@@ -21,10 +21,10 @@ export default function Card({ name, description, image, link }) {
             Rajan Agarwal
           </h3>
           <p className="text-neutral-400 text-sm">
-            <span>17 · Software Engineer · Maker of Things</span>
+            <span>17 · Software Engineer @ University of Waterloo</span>
           </p>
           <p className="text-neutral-500 line-clamp-1 text-sm">
-            Part Time Student, Full Time Builder
+            Currently Building Shapeshift. Prev Arterial, Hack Club, Camp Social. Available for Work.
           </p>
         </div>
       </div>

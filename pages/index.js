@@ -11,7 +11,6 @@ import ImageCard from "@/components/ImageCard";
 import FullImage from "@/components/FullImage";
 import Double from "@/components/Double";
 import Contact from "@/components/Contact";
-// import KnowledgeGraph from "@/components/KnowledgeGraph";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,13 +29,16 @@ export default function Home() {
           href="https://em-content.zobj.net/thumbs/160/apple/81/seedling_1f331.png"
         />
       </Head>
-      <Grid>
+      <Grid
+        style={{
+          marginTop: "2rem",
+          padding: "2rem",
+        }}
+      >
         <Grid.Container
           gap={2}
           justify="center"
           style={{
-            marginTop: "2rem",
-            padding: "2rem",
             display: "flex",
             gap: "2rem",
             justifyContent: "center",
@@ -44,33 +46,33 @@ export default function Home() {
           }}
         >
           <Card />
-          <TextCard
-            name="Welcome"
-            tag={"BREWING SOMETHING NEW"}
-            description="I'm Rajan — I build with AI and Full Stack to create a more interconnected internet. Previously, I've worked in Software Engineering at [Camp Social](https://camp.social) and [Hack Club](https://hackclub.com]), as well as was a Founding Engineer of [Arterial](https://arterial.design)."
+          <Double
+            name="Earthquake-Resistant Buildings"
+            description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
+            tag="Shapeshift"
+            image="/shapeshift-dash.png"
           />
-          <ImageCard
-            name="Research Aggregation"
-            description="Winning Canada's Largest Hackathon"
-            image="https://z.rajan.sh/connexsci.png"
-          />
-          <FullImage name="Photography" image="https://z.rajan.sh/eee.jpg" />
           <Double
             name="Knowledge Repositories"
             description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
             tag="Communities of Knowledge"
             image="https://z.rajan.sh/homepage-aire.png"
           />
+          <ImageCard
+            name="Research Aggregation"
+            description="Winning Canada's Largest Hackathon"
+            image="https://z.rajan.sh/connexsci.png"
+          />
+          <Contact />
           <Double
             name="Humanity on the Internet"
             description="Communities form to coordinate efforts, share resources, and achieve positive-sum outcomes. While aligning the value received by community leaders and participants has always been important, modern communities can go further to establish a tighter connection between the value to members and the overall organization’s worth."
             tag="Software Engineering"
             image="https://z.rajan.sh/cs-dashboard.png"
           />
-          <Contact />
           <ImageCard
             name="The Platonist"
-            description="Abstract Novel Interpretation of the Works of Plato"
+            description="A Novel: Abstract Interpretation of the Works of Plato"
             image="https://z.rajan.sh/collection.png"
           />
           <FullImage name="Photography" image="https://z.rajan.sh/ccc.jpg" />
