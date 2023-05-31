@@ -1,14 +1,13 @@
+import dynamic from 'next/dynamic'
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import { Grid, Tabs, Text } from "@geist-ui/react";
-// import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import Card from "@/components/Card";
 import TextCard from "@/components/TextCard";
 import ImageCard from "@/components/ImageCard";
-import FullImage from "@/components/FullImage";
+const FullImage = dynamic(() => import("@/components/FullImage"))
 import Double from "@/components/Double";
 import Contact from "@/components/Contact";
 
