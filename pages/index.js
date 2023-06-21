@@ -21,7 +21,7 @@ export default function Home() {
         <title>Rajan Agarwal</title>
         <meta
           name="description"
-          content="Rajan Agarwal - 17 year-old Maker of Things."
+          content="Rajan Agarwal - 18 year-old Maker of Things."
         />
         <link
           rel="icon"

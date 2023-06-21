@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
+import { ArrowUpRight } from "@geist-ui/icons";
 
 export default function Card({ name, description, image, link }) {
   return (
@@ -21,10 +22,31 @@ export default function Card({ name, description, image, link }) {
             Rajan Agarwal
           </h3>
           <p className="text-neutral-400 text-sm">
-            <span>17 · Software Engineer @ University of Waterloo</span>
+            <span
+              style={{
+                display: "flex",
+                gap: 3,
+              }}
+            >
+              18 ·{" "}
+              <a
+                className="text-neutral-300"
+                href="https://se-webring.xyz/"
+                target="_blank"
+                style={{
+                  display: "flex",
+                }}
+              >
+                Software Engineer @ University of Waterloo{" "}
+                <span>
+                  <ArrowUpRight size={10} />
+                </span>{" "}
+              </a>
+            </span>
           </p>
           <p className="text-neutral-500 line-clamp-1 text-sm">
-            Currently Building Shapeshift. Prev Arterial, Hack Club, Camp Social. Available for Work.
+            Currently Building Shapeshift. Prev Arterial, Hack Club, Camp
+            Social. Available for Work.
           </p>
         </div>
       </div>
