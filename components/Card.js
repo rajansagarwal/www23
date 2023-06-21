@@ -32,6 +32,7 @@ export default function Card({ name, description, image, link }) {
               <a
                 className="text-neutral-300"
                 href="https://se-webring.xyz/"
+                rel="noreferrer"
                 target="_blank"
                 style={{
                   display: "flex",
