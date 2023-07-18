@@ -5,8 +5,6 @@ import { Inter } from "@next/font/google";
 import { Grid, Tabs, Text } from "@geist-ui/react";
 import { useRouter } from "next/router";
 import Card from "@/components/Card";
-import Intro from "@/components/Intro";
-import Quad from "@/components/Quad";
 import TextCard from "@/components/TextCard";
 import ImageCard from "@/components/ImageCard";
 const FullImage = dynamic(() => import("@/components/FullImage"));
@@ -46,29 +44,12 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <Intro />
-          <Quad
+          <Card />
+          <Double
             name="Earthquake-Resistant Buildings"
             description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
             tag="Shapeshift"
             image="/shapeshift-dash.png"
-          />
-          <div className="flex flex-col gap-8">
-            <TextCard
-              name="Reverse Engineering Earthquakes"
-              tag={"Efficient Building Designs"}
-              description="By deriving a new equation for the Discrete Fourier Transform in the context of a seismic wave, in complement to the algorithm that plotted particle velocities as a function of frequency, direct correlations could be discovered between the movement, defined as HV SR×Rate, and the distance from the epicenter."
-            />
-            <TextCard
-              name="Parallels to Portugal"
-              tag={"Efficient Building Designs"}
-              description="In November 1755, hell broke out in the capital of Portugal. Lisbon, and all that the country encompassed, fell to one of the largest natural distasters in European history. An earthquake, whose epicenter lay in the deep blues of the ocean, took advantage of the poor country's lack of infrastructure. Buildings — residential and royal — fell in fantastic fashion."
-            />
-          </div>
-          <ImageCard
-            name="Research Aggregation"
-            description="Winning Canada's Largest Hackathon"
-            image="https://z.rajan.sh/connexsci.png"
           />
           <Double
             name="Knowledge Repositories"
@@ -76,6 +57,12 @@ export default function Home() {
             tag="Communities of Knowledge"
             image="https://z.rajan.sh/homepage-aire.png"
           />
+          <ImageCard
+            name="Research Aggregation"
+            description="Winning Canada's Largest Hackathon"
+            image="https://z.rajan.sh/connexsci.png"
+          />
+          <Contact />
           <Double
             name="Humanity on the Internet"
             description="Communities form to coordinate efforts, share resources, and achieve positive-sum outcomes. While aligning the value received by community leaders and participants has always been important, modern communities can go further to establish a tighter connection between the value to members and the overall organization’s worth."
@@ -87,6 +74,44 @@ export default function Home() {
             description="A Novel: Abstract Interpretation of the Works of Plato"
             image="https://z.rajan.sh/collection.png"
           />
+          <FullImage name="Photography" image="https://z.rajan.sh/ccc.jpg" />
+          <ImageCard
+            name="Fleet"
+            description="Evolutionary Game Theory Algorithm"
+            image="https://z.rajan.sh/EGT.png"
+          />
+          <FullImage name="Photography" image="https://z.rajan.sh/aaa.jpg" />
+          <Double
+            name="Etherealism: Visual Interpretations"
+            description="A text-to-image GAN built from scratch that interprets key words, emotions and concepts from poetry and creates a symbolic image around these varying interpretations."
+            tag="Software Engineering"
+            image="https://z.rajan.sh/generated.png"
+          />
+          <ImageCard
+            name="Equitable Access"
+            description="Raising $20K with ChoiceDAO"
+            image="https://z.rajan.sh/cdao.png"
+          />
+          <FullImage
+            name="First Robot (2016)"
+            image="https://z.rajan.sh/robot.jpg"
+          />
+          <ImageCard
+            name="Hack Club Apply"
+            description="Redesigned Application, 1M+ Reach; 7K Active"
+            image="https://z.rajan.sh/hcapply.png"
+          />
+          <TextCard
+            name="Fourier Analysis of Earthquakes"
+            tag={"Efficient Building Designs"}
+            description="By deriving a new equation for the Discrete Fourier Transform in the context of a seismic wave, in complement to the algorithm that plotted particle velocities as a function of frequency, direct correlations could be discovered between the movement, defined as HV SR×Rate, and the distance from the epicenter."
+          />
+          <ImageCard
+            name="Centric"
+            description="Medical data aggregation, built on custom chain"
+            image="https://z.rajan.sh/bloom.png"
+          />
+          <FullImage name="Photography" image="https://z.rajan.sh/eee.jpg" />
         </Grid.Container>
       </Grid>
       <br />

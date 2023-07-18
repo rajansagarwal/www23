@@ -7,7 +7,7 @@ export default function Double({ name, description, tag, image, link }) {
   return (
     <>
       <Grid
-        className="x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
+        className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
           height: "20em",
           width: "52em",

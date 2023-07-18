@@ -2,51 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, main {
-    overflow-x: hidden;
-    height: 100vh;
-    background-color: black;
+html,
+body,
+main {
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: black;
 }
 
 main {
   padding: 2vh 2vw;
 }
 
-@media(max-width: 1200px) {
-    main {
-        padding: 0;
-    }
+@media (max-width: 1200px) {
+  main {
+    padding: 0;
+  }
 }
 
 .x-mobile {
-    display: block;
+  display: block;
 }
 
 .x-desktop {
-    display: none;
+  display: none;
 }
 
-@media(max-width: 1200px) {
-    .x-mobile {
-        display: none;
-    }
-    .x-desktop {
-        display: block;
-    }
+@media (max-width: 1200px) {
+  .x-mobile {
+    display: none;
+  }
+  .x-desktop {
+    display: block;
+  }
 }
 
 .overflowhidden {
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    background: black !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  background: black !important;
 }
 
 div[data-theme-1] {
-    background-color: #000000 !important;
+  background-color: #000000 !important;
 }
 
 .sticky-sidebar {
-    position: sticky;
-    top: 0;
-    height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.blurbottom {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.4)
+  );
+  transition: 0.5s;
 }
