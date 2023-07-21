@@ -1,7 +1,6 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
 import ImageCard from "./ImageCard";
-import ReactMarkdown from "react-markdown";
 
 export default function Quad({ name, description, tag, image, link }) {
   return (

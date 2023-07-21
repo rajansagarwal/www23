@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
 import { ArrowUpRight } from "@geist-ui/icons";
 

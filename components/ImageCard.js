@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
-import ReactMarkdown from "react-markdown";
 
 export default function ImageCard({ name, description, image, link }) {
   return (

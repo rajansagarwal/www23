@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
 
 export default function Contact({ name, description, image, date, tag, link }) {

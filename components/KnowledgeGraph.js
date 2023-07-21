@@ -1,6 +1,5 @@
 import Graph from "react-graph-vis";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
 
 export default function App() {
