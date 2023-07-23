@@ -56,12 +56,14 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <TextCard
               name="Reverse Engineering Earthquakes"
-              tag={"Efficient Building Designs"}
+              tag={"Research"}
+              link="/parallels"
               description="By deriving a new equation for the Discrete Fourier Transform in the context of a seismic wave, in complement to the algorithm that plotted particle velocities as a function of frequency, direct correlations could be discovered between the movement, defined as HV SR×Rate, and the distance from the epicenter."
             />
             <TextCard
               name="Parallels to Portugal"
-              tag={"Efficient Building Designs"}
+              tag={"Article"}
+              link="/parallels"
               description="In November 1755, hell broke out in the capital of Portugal. Lisbon, and all that the country encompassed, fell to one of the largest natural distasters in European history. An earthquake, whose epicenter lay in the deep blues of the ocean, took advantage of the poor country's lack of infrastructure. Buildings — residential and royal — fell in fantastic fashion."
             />
           </div>
