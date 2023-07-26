@@ -1,8 +1,17 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
 import FullImage from "./FullImage";
+import { useState, useRef } from "react";
 
-export default function Quad({ name, description, tag, image, link }) {
+
+export default function Quad({ name, description, tag, image, video, link }) {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
+
   return (
     <>
       <Grid
@@ -26,19 +35,32 @@ export default function Quad({ name, description, tag, image, link }) {
               <span>{name}</span>
             </p>
           </div>
-          <video
-            autoPlay
-            muted
-            loop
-            src={image}
-            className="rounded-sm"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              width: "100%",
-              height: "100%",
-            }}
-          />
+          {videoLoaded ? (
+            <video
+              ref={videoRef}
+              autoPlay
+              muted
+              loop
+              src={video}
+              className="rounded-sm"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          ) : (
+            <Image
+              src={image}
+              alt={name}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              onLoad={handleVideoLoad}
+              className="rounded-sm"
+            />
+          )}
         </div>
       </Grid>
       <div className="x-desktop">
