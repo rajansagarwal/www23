@@ -3,7 +3,15 @@ import Image from "next/image";
 import ImageCard from "./ImageCard";
 import ReactMarkdown from "react-markdown";
 
-export default function Double({ name, description, tag, image, link }) {
+export default function Double({
+  name,
+  description,
+  tag,
+  image,
+  link,
+  video,
+  stack,
+}) {
   return (
     <>
       <Grid
@@ -37,10 +45,10 @@ export default function Double({ name, description, tag, image, link }) {
                   textOverflow: "ellipsis",
                   overflow: "hidden",
                   display: "-webkit-box",
-                  WebkitLineClamp: 4,
+                  WebkitLineClamp: 6,
                   WebkitBoxOrient: "vertical",
                   wordWrap: "break-word",
-                  maxHeight: "7.2em",
+                  maxHeight: "11.8em",
                   lineHeight: "1.8em",
                 }}
               >
@@ -54,21 +62,37 @@ export default function Double({ name, description, tag, image, link }) {
               position: "relative",
               objectFit: "left",
               bottom: -50,
-              right: -50,
+              right: -30,
             }}
           >
-            <Image
-              src={image}
-              width={500}
-              height={500}
-              className="rounded-md"
-              style={{
-                height: "100%",
-                objectFit: "cover",
-                width: "100%",
-                objectPosition: "left",
-              }}
-            />
+            {video ? (
+              <video
+                autoPlay
+                muted
+                loop
+                src={image}
+                className="rounded-lg"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            ) : (
+              <Image
+                src={image}
+                width={500}
+                height={500}
+                className="rounded-lg"
+                style={{
+                  height: "100%",
+                  objectFit: "cover",
+                  width: "100%",
+                  objectPosition: "left",
+                }}
+              />
+            )}
           </div>
         </div>
       </Grid>
@@ -77,4 +101,30 @@ export default function Double({ name, description, tag, image, link }) {
       </div>
     </>
   );
+}
+
+{
+  /* 
+
+<div className="flex gap-2">
+                {stack.map((item, index) => (
+                  <Image
+                    key={index}
+                    alt={item}
+                    src={`https://abrudz.github.io/logos/${item}.svg`}
+                    width={20}
+                    height={20}
+                    className="rounded-lg"
+                    style={{
+                      height: "20px",
+                      objectFit: "cover",
+                      width: "20px",
+                      objectPosition: "left",
+                      WebkitFilter: "grayscale(100%)",
+                      filter: "grayscale(100%)",
+                    }}
+                  />
+                ))}
+              </div>
+*/
 }

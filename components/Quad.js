@@ -1,6 +1,6 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
-import ImageCard from "./ImageCard";
+import FullImage from "./FullImage";
 
 export default function Quad({ name, description, tag, image, link }) {
   return (
@@ -8,7 +8,7 @@ export default function Quad({ name, description, tag, image, link }) {
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
-          height: "35em",
+          height: "30em",
           width: "52em",
           overflow: "hidden",
           position: "relative",
@@ -26,10 +26,11 @@ export default function Quad({ name, description, tag, image, link }) {
               <span>{name}</span>
             </p>
           </div>
-          <Image
+          <video
+            autoPlay
+            muted
+            loop
             src={image}
-            width={1000}
-            height={1000}
             className="rounded-sm"
             style={{
               objectFit: "cover",
@@ -41,7 +42,7 @@ export default function Quad({ name, description, tag, image, link }) {
         </div>
       </Grid>
       <div className="x-desktop">
-        <ImageCard name={name} description={description} image={image} />
+        <FullImage name={name} description={description} image={image} />
       </div>
     </>
   );

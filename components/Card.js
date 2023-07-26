@@ -12,7 +12,7 @@ export default function Card({ name, description, image, link }) {
     >
       <div className="flex h-full w-full flex-col justify-between">
         <div className="flex items-center justify-between p-3 text-sm tracking-tight text-neutral-400">
-          <div className="bg-emerald-400/40 text-emerald-300 inline-block rounded px-1.5 pt-0.5 pb-1 font-mono text-xs tracking-tight shadow-inset-skeuo">
+          <div className="bg-emerald-400/40 text-emerald-300 inline-block rounded px-1.5 pt-0.5 pb-1 font-serif text-xs tracking-tight shadow-inset-skeuo">
             <span>AI FOR HUMANITY</span>
           </div>
         </div>
