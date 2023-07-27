@@ -1,6 +1,6 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
-import ImageCard from "./ImageCard";
+import FullVideo from "./FullVideo";
 import ReactMarkdown from "react-markdown";
 
 export default function Double({
@@ -97,7 +97,40 @@ export default function Double({
         </div>
       </Grid>
       <div className="x-desktop">
-        <ImageCard name={name} description={description} image={image} />
+        <Grid
+          className={`aspect-[1] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
+          style={{
+            height: "20em",
+            width: "25em",
+          }}
+        >
+          <div className="flex h-full w-full flex-col justify-between">
+            <div
+              style={{
+                position: "absolute",
+                bottom: "0",
+                left: "1rem",
+              }}
+            >
+              <p className="text-neutral-400 text-sm bg-zinc-800 bg-opacity-80 px-4 rounded-sm">
+                <span>{name}</span>
+              </p>
+            </div>
+            <video
+              autoPlay
+              muted
+              loop
+              src={image}
+              className="rounded-sm"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
+        </Grid>
       </div>
     </>
   );
