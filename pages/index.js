@@ -94,7 +94,7 @@ export default function Home() {
                   description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
                   tag="Shapeshift"
                   image="/shapeshift-dash.png"
-                  video="/shapeshift-demo.mp4"
+                  video="/shapeshift-demo-small.mp4"
                 />
               </a>
               <div className="flex flex-col gap-6">
@@ -177,16 +177,14 @@ export default function Home() {
                   image="https://z.rajan.sh/connexsci.png"
                 />
               </LazyLoad>
-              <LazyLoad>
                 <Double
                   name="Offline Mesh Network"
                   description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
                   tag="Software Engineering"
                   stack={["Swift", "Python"]}
                   video
-                  image="/zephyr-demo-close.mp4"
+                  image="/zephyr-demo-small.mp4"
                 />
-              </LazyLoad>
               <LazyLoad>
                 <Double
                   name="Digital Humanity"
