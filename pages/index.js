@@ -169,20 +169,24 @@ export default function Home() {
                   </Grid>
                 </Link>
               </div>
-              <FullImage
-                name="ConnexSci: Embedding Research"
-                description="Winning Canada's Largest Hackathon"
-                // video="/connexsci-live.mp4"
-                image="https://z.rajan.sh/connexsci.png"
-              />
-              <Double
-                name="Offline Mesh Network"
-                description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
-                tag="Software Engineering"
-                stack={["Swift", "Python"]}
-                video
-                image="/zephyr-demo-close.mp4"
-              />
+              <LazyLoad>
+                <FullImage
+                  name="ConnexSci: Embedding Research"
+                  description="Winning Canada's Largest Hackathon"
+                  // video="/connexsci-live.mp4"
+                  image="https://z.rajan.sh/connexsci.png"
+                />
+              </LazyLoad>
+              <LazyLoad>
+                <Double
+                  name="Offline Mesh Network"
+                  description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
+                  tag="Software Engineering"
+                  stack={["Swift", "Python"]}
+                  video
+                  image="/zephyr-demo-close.mp4"
+                />
+              </LazyLoad>
               <LazyLoad>
                 <Double
                   name="Digital Humanity"
@@ -192,6 +196,8 @@ export default function Home() {
                   stack={["Ruby", "TypeScript", "Rust"]}
                   image="/CSD.mp4"
                 />
+              </LazyLoad>
+              <LazyLoad>
                 <FullVideo
                   name="The Platonist"
                   description="A Novel: Abstract Interpretation of the Works of Plato"
@@ -205,6 +211,8 @@ export default function Home() {
                   description="A Novel: Abstract Interpretation of the Works of Plato"
                   image="https://z.rajan.sh/generated.png"
                 />
+              </LazyLoad>
+              <LazyLoad>
                 <Double
                   name="Knowledge Repositories"
                   description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
