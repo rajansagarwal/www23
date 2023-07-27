@@ -60,7 +60,7 @@ export default function Home() {
             <title>Rajan Agarwal</title>
             <meta
               name="description"
-              content="Rajan Agarwal - 18 year-old Software Engineer"
+              content="Rajan Agarwal - 18 year-old Software Engineer studying at the University of Waterloo. Rajan is currently building Shapeshift, a due-diligence optimization platform to streamline the production of earthquake-ressitant buildings. Previously, he has worked at Arterial, Camp Social and Hack Club. Rajan is presently looking for work in Summer 2024."
             />
             <link
               rel="icon"
