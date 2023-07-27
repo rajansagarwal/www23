@@ -10,11 +10,6 @@ export default function Quad({ name, description, tag, image, video, link }) {
     setVideoLoaded(true);
   };
 
-  const handleVideoReady = () => {
-    // Now that the video is ready to play, hide the image
-    setVideoLoaded(false);
-  };
-
   return (
     <>
       <Grid
@@ -38,17 +33,14 @@ export default function Quad({ name, description, tag, image, video, link }) {
               <span>{name}</span>
             </p>
           </div>
-          {/* Show the image when the video is not loaded */}
-          {!videoLoaded && (
-            <Image
-              src={image}
-              width={700}
-              height={700}
-              alt={name}
-              onLoad={handleVideoLoad}
-              className="rounded-sm"
-            />
-          )}
+          <Image
+            src={image}
+            alt={name}
+            width={700}
+            height={700}
+            onLoad={handleVideoLoad}
+            className={`rounded-sm ${videoLoaded ? "hidden" : ""}`}
+          />
           <video
             ref={videoRef}
             autoPlay
@@ -63,7 +55,6 @@ export default function Quad({ name, description, tag, image, video, link }) {
               width: "100%",
               height: "100%",
             }}
-            onLoadedData={handleVideoReady}
           />
         </div>
       </Grid>
