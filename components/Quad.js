@@ -1,6 +1,5 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
-import FullImage from "./FullImage";
 import { useState, useRef } from "react";
 
 export default function Quad({ name, description, tag, image, video, link }) {
@@ -9,6 +8,11 @@ export default function Quad({ name, description, tag, image, video, link }) {
 
   const handleVideoLoad = () => {
     setVideoLoaded(true);
+  };
+
+  const handleVideoReady = () => {
+    // Now that the video is ready to play, hide the image
+    setVideoLoaded(false);
   };
 
   return (
@@ -34,33 +38,33 @@ export default function Quad({ name, description, tag, image, video, link }) {
               <span>{name}</span>
             </p>
           </div>
-          {videoLoaded ? (
-            <video
-              ref={videoRef}
-              autoPlay
-              muted
-              loop
-              playsinline
-              src={"shapeshift-demo.mp4"}
-              className="rounded-sm"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-                width: "100%",
-                height: "100%",
-              }}
-            />
-          ) : (
+          {/* Show the image when the video is not loaded */}
+          {!videoLoaded && (
             <Image
               src={image}
+              width={700}
+              height={700}
               alt={name}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
               onLoad={handleVideoLoad}
               className="rounded-sm"
             />
           )}
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            src={video}
+            className={`rounded-sm ${videoLoaded ? "" : "hidden"}`}
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+              width: "100%",
+              height: "100%",
+            }}
+            onLoadedData={handleVideoReady}
+          />
         </div>
       </Grid>
       <div className="x-desktop">
