@@ -89,7 +89,7 @@ export default function Home() {
                 description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
                 tag="Shapeshift"
                 image="/shapeshift-dash.png"
-                video="/shapeshift-demo-small.mp4"
+                video="/shapeshift-demo-small.gif"
               />
               <div className="flex flex-col gap-6">
                 <a

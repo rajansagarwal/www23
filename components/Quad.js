@@ -14,11 +14,10 @@ export default function Quad({ name, description, tag, image, video, link }) {
           position: "relative",
         }}
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <Image
+          height={1000}
+          width={1000}
+          unoptimized={true}
           src={video}
           className="rounded-sm"
           style={{
@@ -49,10 +48,10 @@ export default function Quad({ name, description, tag, image, video, link }) {
                 <span>{name}</span>
               </p>
             </div>
-            <video
-              autoPlay
-              muted
-              loop
+            <Image
+              height={1000}
+              width={1000}
+              unoptimized={true}
               src={video}
               className="rounded-sm"
               style={{
