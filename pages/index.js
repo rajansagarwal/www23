@@ -36,6 +36,7 @@ export default function Home() {
           alignItems: "center",
           height: "100vh",
           backgroundColor: "black",
+          color: "white"
         }}
       >
         <h1>Maker of Worlds.</h1>
