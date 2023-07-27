@@ -3,6 +3,22 @@ import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 export default function Quad({ name, description, tag, image, video, link }) {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.addEventListener("loadeddata", handleVideoLoaded);
+      return () => {
+        videoRef.current.removeEventListener("loadeddata", handleVideoLoaded);
+      };
+    }
+  }, []);
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
+  };
+
   return (
     <>
       <Grid
@@ -14,19 +30,32 @@ export default function Quad({ name, description, tag, image, video, link }) {
           position: "relative",
         }}
       >
+        {videoLoaded ? null : (
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+              backgroundColor: "#000",
+            }}
+          />
+        )}
         <video
           autoPlay
           muted
           loop
           playsInline
           src={video}
-          className="rounded-sm"
+          className={`rounded-sm ${videoLoaded ? "visible" : "invisible"}`}
           style={{
             objectFit: "cover",
             objectPosition: "center",
             width: "100%",
             height: "100%",
           }}
+          ref={videoRef}
         />
       </Grid>
       <div className="x-desktop">
@@ -49,18 +78,31 @@ export default function Quad({ name, description, tag, image, video, link }) {
                 <span>{name}</span>
               </p>
             </div>
+            {videoLoaded ? null : (
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  left: 0,
+                  backgroundColor: "#000",
+                }}
+              />
+            )}
             <video
               autoPlay
               muted
               loop
               src={video}
-              className="rounded-sm"
+              className={`rounded-sm ${videoLoaded ? "visible" : "invisible"}`}
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
                 width: "100%",
                 height: "100%",
               }}
+              ref={videoRef}
             />
           </div>
         </Grid>

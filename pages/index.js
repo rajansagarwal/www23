@@ -84,19 +84,13 @@ export default function Home() {
               }}
             >
               <Intro />
-              <a
-                href="https://www.loom.com/share/a0d046b4d50846889e921eed98f09d35?sid=d1fe7968-e8ed-4cbd-b245-d6b39656ef19"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Quad
-                  name="Optimizing Earthquake-Resistant Buildings"
-                  description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
-                  tag="Shapeshift"
-                  image="/shapeshift-dash.png"
-                  video="/shapeshift-demo-small.mp4"
-                />
-              </a>
+              <Quad
+                name="Optimizing Earthquake-Resistant Buildings"
+                description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
+                tag="Shapeshift"
+                image="/shapeshift-dash.png"
+                video="/shapeshift-demo-small.mp4"
+              />
               <div className="flex flex-col gap-6">
                 <a
                   href="https://www.loom.com/share/a0d046b4d50846889e921eed98f09d35?sid=d1fe7968-e8ed-4cbd-b245-d6b39656ef19"
@@ -177,14 +171,14 @@ export default function Home() {
                   image="https://z.rajan.sh/connexsci.png"
                 />
               </LazyLoad>
-                <Double
-                  name="Offline Mesh Network"
-                  description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
-                  tag="Software Engineering"
-                  stack={["Swift", "Python"]}
-                  video
-                  image="/zephyr-demo-small.mp4"
-                />
+              <Double
+                name="Offline Mesh Network"
+                description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
+                tag="Software Engineering"
+                stack={["Swift", "Python"]}
+                video
+                image="/zephyr-demo-small.mp4"
+              />
               <LazyLoad>
                 <Double
                   name="Digital Humanity"
