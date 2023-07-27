@@ -16,6 +16,7 @@ import Double from "@/components/Double";
 import Contact from "@/components/Contact";
 import { ArrowUpRight, ArrowRight } from "@geist-ui/icons";
 import { useEffect, useState } from "react";
+import LazyLoad from "react-lazyload";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +37,7 @@ export default function Home() {
           alignItems: "center",
           height: "100vh",
           backgroundColor: "black",
-          color: "white"
+          color: "white",
         }}
       >
         <h1>Maker of Worlds.</h1>
@@ -182,32 +183,36 @@ export default function Home() {
                 video
                 image="/zephyr-demo-close.mp4"
               />
-              <Double
-                name="Digital Humanity"
-                description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
-                tag="Software Engineering"
-                video
-                stack={["Ruby", "TypeScript", "Rust"]}
-                image="/CSD.mp4"
-              />
-              <FullVideo
-                name="The Platonist"
-                description="A Novel: Abstract Interpretation of the Works of Plato"
-                image="https://z.rajan.sh/collection.png"
-                video="/platonist-loop.mp4"
-              />
-              <FullImage
-                name="Etherealism: Poetry Visualizations"
-                description="A Novel: Abstract Interpretation of the Works of Plato"
-                image="https://z.rajan.sh/generated.png"
-              />
-              <Double
-                name="Knowledge Repositories"
-                description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
-                tag="Communities of Knowledge"
-                stack={["Swift", "Python"]}
-                image="https://z.rajan.sh/homepage-aire.png"
-              />
+              <LazyLoad>
+                <Double
+                  name="Digital Humanity"
+                  description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
+                  tag="Software Engineering"
+                  video
+                  stack={["Ruby", "TypeScript", "Rust"]}
+                  image="/CSD.mp4"
+                />
+                <FullVideo
+                  name="The Platonist"
+                  description="A Novel: Abstract Interpretation of the Works of Plato"
+                  image="https://z.rajan.sh/collection.png"
+                  video="/platonist-loop.mp4"
+                />
+              </LazyLoad>
+              <LazyLoad>
+                <FullImage
+                  name="Etherealism: Poetry Visualizations"
+                  description="A Novel: Abstract Interpretation of the Works of Plato"
+                  image="https://z.rajan.sh/generated.png"
+                />
+                <Double
+                  name="Knowledge Repositories"
+                  description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
+                  tag="Communities of Knowledge"
+                  stack={["Swift", "Python"]}
+                  image="https://z.rajan.sh/homepage-aire.png"
+                />
+              </LazyLoad>
             </Grid.Container>
           </Grid>
           <br />

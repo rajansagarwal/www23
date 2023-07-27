@@ -9,33 +9,6 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@cloudinary-util/url-loader@^3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-3.10.0.tgz#30dbed4d60968687c9161a60b246da62d42c3e33"
-  integrity sha512-RNp6WayU6e5ikA7yCRqNhp0lOwLl82vLco9EwpES2si6Hb+g9yEaeTYvobD44ISQeJUnPl6e1c/AEYVSjfzwrg==
-  dependencies:
-    "@cloudinary-util/util" "2.2.1"
-    "@cloudinary/url-gen" "^1.10.2"
-
-"@cloudinary-util/util@2.2.1", "@cloudinary-util/util@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-2.2.1.tgz#c482d9321d37d921b347858a121c161b68782bd3"
-  integrity sha512-MEIqn5WtPP3mxSMTNNfpqlGS1UquAXcjmVdY/t/edD/ZWVjI85viBiOMIuF0W6n6UF5gTstLymfQNYx0YO/GZg==
-
-"@cloudinary/transformation-builder-sdk@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.4.0.tgz#5ae4332bd0384ed55ca34ebab064bc9626c0b294"
-  integrity sha512-atU25SFAmR4aXlPHDs7fERmcl0OSnwQl80b5Fy3unvwHSj10fnqHBdLeeOEBNaOXdF3WQLmNSGMkOV8IlDPfMA==
-  dependencies:
-    "@cloudinary/url-gen" "^1.7.0"
-
-"@cloudinary/url-gen@^1.10.2", "@cloudinary/url-gen@^1.7.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.11.0.tgz#0c149f43925f93faa3f669dbad8b56db4eeb5bb7"
-  integrity sha512-jShJoh+5JQfsMnh/NUqe8Z2EzZo/++BQ/CuF/VND4hA7zNpXn6vYi5JMIZ4YvLGRrqHuMtqCFahaTe1RBsLJJQ==
-  dependencies:
-    "@cloudinary/transformation-builder-sdk" "^1.4.0"
-
 "@eslint/eslintrc@^1.4.1":
   version "1.4.1"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.4.1.tgz"
@@ -1937,14 +1910,6 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-cloudinary@^4.16.3:
-  version "4.16.3"
-  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-4.16.3.tgz#c059825a5a586dd2eb3388ad0cc25ae818b01fea"
-  integrity sha512-dkwvSAFyOvSBd+gBeeI0UaQjnJcXDs1FQYrXIcrF0outdG//02VNXUA45ieOYKhT2/f9NTnHsyfRhizEb0hu/A==
-  dependencies:
-    "@cloudinary-util/url-loader" "^3.10.0"
-    "@cloudinary-util/util" "^2.2.1"
-
 next@13.1.6:
   version "13.1.6"
   resolved "https://registry.npmjs.org/next/-/next-13.1.6.tgz"
@@ -2271,6 +2236,11 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-lazyload@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-3.2.0.tgz#497bd06a6dbd7015e3376e1137a67dc47d2dd021"
+  integrity sha512-zJlrG8QyVZz4+xkYZH5v1w3YaP5wEFaYSUWC4CT9UXfK75IfRAIEdnyIUF+dXr3kX2MOtL1lUaZmaQZqrETwgw==
 
 react-markdown@^8.0.5:
   version "8.0.7"
