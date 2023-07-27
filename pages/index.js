@@ -14,23 +14,19 @@ const FullImage = dynamic(() => import("@/components/FullImage"));
 const FullVideo = dynamic(() => import("@/components/FullVideo"));
 import Double from "@/components/Double";
 import Contact from "@/components/Contact";
-import { ArrowUpRight } from "@geist-ui/icons";
+import { ArrowUpRight, ArrowRight } from "@geist-ui/icons";
 import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
-
-  // Add a loading state with initial value set to true
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // When the component is mounted, set the loading state to false
     setLoading(false);
   }, []);
 
-  // Show loading animation while content is being fetched/rendered
   if (loading) {
     return (
       <div
@@ -48,7 +44,13 @@ export default function Home() {
   return (
     <main>
       {loading ? (
-        <>Loading</>
+        <div
+          style={{
+            background: "black",
+          }}
+        >
+          Rajan Agarwal
+        </div>
       ) : (
         <>
           <Head>
@@ -79,44 +81,56 @@ export default function Home() {
               }}
             >
               <Intro />
-              <Quad
-                name="Optimizing Earthquake-Resistant Buildings"
-                description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
-                tag="Shapeshift"
-                image="/shapeshift-dash.png"
-                video="/shapeshift-demo.mp4"
-              />
+              <a
+                href="https://www.loom.com/share/a0d046b4d50846889e921eed98f09d35?sid=d1fe7968-e8ed-4cbd-b245-d6b39656ef19"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Quad
+                  name="Optimizing Earthquake-Resistant Buildings"
+                  description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
+                  tag="Shapeshift"
+                  image="/shapeshift-dash.png"
+                  video="/shapeshift-demo.mp4"
+                />
+              </a>
               <div className="flex flex-col gap-6">
-                <Grid
-                  className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
-                  style={{
-                    height: "16.5em",
-                    overflow: "hidden",
-                    width: "25em",
-                  }}
+                <a
+                  href="https://www.loom.com/share/a0d046b4d50846889e921eed98f09d35?sid=d1fe7968-e8ed-4cbd-b245-d6b39656ef19"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <div>
-                    <div className="px-5">
-                      <div
-                        className="text-neutral-400 text-sm line-clamp-1"
-                        suppressHydrationWarning
-                      >
-                        <p
-                          className="text-neutral-400 text-lg"
+                  <Grid
+                    className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
+                    style={{
+                      height: "16.5em",
+                      overflow: "hidden",
+                      width: "25em",
+                    }}
+                  >
+                    <div>
+                      <div className="px-5">
+                        <div
+                          className="text-neutral-400 text-sm line-clamp-1"
                           suppressHydrationWarning
                         >
-                          <b className="font-bold font-mono">Shapeshift</b> is a
-                          cutting-edge due diligence optimization platform that
-                          streamlines the construction of earthquake-resistant
-                          buildings. The platform achieves this by utilizing
-                          novel
-                          <b> mathematical and physics algorithms</b> to
-                          understand seismic frequencies.
-                        </p>
+                          <p
+                            className="text-neutral-400 text-lg"
+                            suppressHydrationWarning
+                          >
+                            <b className="font-bold font-mono">Shapeshift</b> is
+                            a cutting-edge due diligence optimization platform
+                            that streamlines the construction of
+                            earthquake-resistant buildings. The platform
+                            achieves this by utilizing novel
+                            <b> mathematical and physics algorithms</b> to
+                            understand seismic frequencies.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Grid>
+                  </Grid>
+                </a>
                 <Link href="/parallels">
                   <Grid
                     className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
@@ -133,10 +147,10 @@ export default function Home() {
                           suppressHydrationWarning
                         >
                           <p
-                            className="text-neutral-400 text-lg font-bold font-mono"
+                            className="text-neutral-400 text-lg font-bold font-mono flex justify-between"
                             suppressHydrationWarning
                           >
-                            Parallels to Portugal
+                            Parallels to Portugal <ArrowRight />
                           </p>
                           <p
                             className="text-neutral-400 text-lg"
@@ -152,16 +166,16 @@ export default function Home() {
                   </Grid>
                 </Link>
               </div>
-              <FullVideo
+              <FullImage
                 name="ConnexSci: Embedding Research"
                 description="Winning Canada's Largest Hackathon"
-                video="/connexsci-live.mp4"
+                // video="/connexsci-live.mp4"
                 image="https://z.rajan.sh/connexsci.png"
               />
               <Double
                 name="Offline Mesh Network"
                 description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
-                tag="Communities of Knowledge"
+                tag="Software Engineering"
                 stack={["Swift", "Python"]}
                 video
                 image="/zephyr-demo-close.mp4"

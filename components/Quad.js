@@ -2,7 +2,7 @@ import { Grid } from "@geist-ui/react";
 import Image from "next/image";
 import FullImage from "./FullImage";
 import { useState, useRef } from "react";
-
+import { CldVideoPlayer } from 'next-cloudinary';
 
 export default function Quad({ name, description, tag, image, video, link }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -41,7 +41,7 @@ export default function Quad({ name, description, tag, image, video, link }) {
               autoPlay
               muted
               loop
-              src={video}
+              src={'shapeshift-demo.mp4'}
               className="rounded-sm"
               style={{
                 objectFit: "cover",
