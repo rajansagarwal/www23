@@ -35,9 +35,10 @@ export default function Home() {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
+          backgroundColor: "black",
         }}
       >
-        <h1>Loading...</h1>
+        <h1>Maker of Worlds.</h1>
       </div>
     );
   }

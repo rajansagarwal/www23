@@ -41,6 +41,7 @@ export default function Quad({ name, description, tag, image, video, link }) {
               autoPlay
               muted
               loop
+              playsinline
               src={'shapeshift-demo.mp4'}
               className="rounded-sm"
               style={{
