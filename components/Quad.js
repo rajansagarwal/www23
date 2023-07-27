@@ -2,7 +2,7 @@ import { Grid } from "@geist-ui/react";
 import Image from "next/image";
 import FullImage from "./FullImage";
 import { useState, useRef } from "react";
-import { CldVideoPlayer } from 'next-cloudinary';
+import { CldVideoPlayer } from "next-cloudinary";
 
 export default function Quad({ name, description, tag, image, video, link }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -42,7 +42,7 @@ export default function Quad({ name, description, tag, image, video, link }) {
               muted
               loop
               playsinline
-              src={'shapeshift-demo.mp4'}
+              src={"shapeshift-demo.mp4"}
               className="rounded-sm"
               style={{
                 objectFit: "cover",
@@ -65,7 +65,40 @@ export default function Quad({ name, description, tag, image, video, link }) {
         </div>
       </Grid>
       <div className="x-desktop">
-        <FullImage name={name} description={description} image={image} />
+        <Grid
+          className={`aspect-[1] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
+          style={{
+            height: "20em",
+            width: "25em",
+          }}
+        >
+          <div className="flex h-full w-full flex-col justify-between">
+            <div
+              style={{
+                position: "absolute",
+                bottom: "0",
+                left: "1rem",
+              }}
+            >
+              <p className="text-neutral-400 text-sm bg-zinc-800 bg-opacity-80 px-4 rounded-sm">
+                <span>{name}</span>
+              </p>
+            </div>
+            <video
+              autoPlay
+              muted
+              loop
+              src={video}
+              className="rounded-sm"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
+        </Grid>
       </div>
     </>
   );
