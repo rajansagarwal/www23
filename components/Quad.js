@@ -1,15 +1,8 @@
 import { Grid } from "@geist-ui/react";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Quad({ name, description, tag, image, video, link }) {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-  const videoRef = useRef(null);
-
-  const handleVideoLoad = () => {
-    setVideoLoaded(true);
-  };
-
   return (
     <>
       <Grid
@@ -21,42 +14,20 @@ export default function Quad({ name, description, tag, image, video, link }) {
           position: "relative",
         }}
       >
-        <div className="flex h-full w-full flex-col justify-between">
-          <div
-            style={{
-              position: "absolute",
-              bottom: "0",
-              left: "1rem",
-            }}
-          >
-            <p className="text-neutral-400 text-sm bg-zinc-800 bg-opacity-80 px-4 rounded-sm">
-              <span>{name}</span>
-            </p>
-          </div>
-          <Image
-            src={image}
-            alt={name}
-            width={700}
-            height={700}
-            onLoad={handleVideoLoad}
-            className={`rounded-sm ${videoLoaded ? "hidden" : ""}`}
-          />
-          <video
-            ref={videoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            src={video}
-            className={`rounded-sm ${videoLoaded ? "" : "hidden"}`}
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              width: "100%",
-              height: "100%",
-            }}
-          />
-        </div>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          src={video}
+          className="rounded-sm"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            width: "100%",
+            height: "100%",
+          }}
+        />
       </Grid>
       <div className="x-desktop">
         <Grid
