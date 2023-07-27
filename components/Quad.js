@@ -14,6 +14,17 @@ export default function Quad({ name, description, tag, image, video, link }) {
           position: "relative",
         }}
       >
+        <div
+          style={{
+            position: "absolute",
+            bottom: "0",
+            left: "1rem",
+          }}
+        >
+          <p className="text-neutral-400 text-sm bg-zinc-800 bg-opacity-80 px-4 rounded-sm">
+            <span>{name}</span>
+          </p>
+        </div>
         <Image
           height={1000}
           width={1000}

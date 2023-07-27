@@ -163,14 +163,12 @@ export default function Home() {
                   </Grid>
                 </Link>
               </div>
-              <LazyLoad>
                 <FullImage
                   name="ConnexSci: Embedding Research"
                   description="Winning Canada's Largest Hackathon"
                   // video="/connexsci-live.mp4"
                   image="https://z.rajan.sh/connexsci.png"
                 />
-              </LazyLoad>
               <Double
                 name="Offline Mesh Network"
                 description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
