@@ -115,7 +115,7 @@ export default function Home() {
                 </a>
                 <Link href="/parallels">
                   <Grid
-                    className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
+                    className="x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
                     style={{
                       height: "12em",
                       overflow: "hidden",

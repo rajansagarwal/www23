@@ -16,7 +16,10 @@ export default function Intro({ name, description, image, link }) {
           <h3 className="font-serif-variation mt-3 mb-5 font-serif text-3xl text-white font-normal md:text-2xl lg:text-3xl">
             rajan agarwal{" "}
             <span className="text-neutral-400 fade-in-2">
-              is exploring the <br className="x-mobile" />
+              is exploring the{" "}
+            </span>
+            <br className="x-mobile" />
+            <span className="text-neutral-400 fade-in-2-semi">
               interplay between
             </span>{" "}
             <span className="font-serif fade-in-2-mid">design</span>{" "}

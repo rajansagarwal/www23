@@ -95,6 +95,11 @@ div[data-theme-1] {
   opacity: 0;
 }
 
+.fade-in-2-semi {
+  animation: fadeIn 1s ease 1.2s forwards;
+  opacity: 0;
+}
+
 .fade-in-2-mid {
   animation: fadeIn 1s ease 1.4s forwards;
   opacity: 0;
@@ -111,26 +116,26 @@ div[data-theme-1] {
 }
 
 .fade-in-4 {
-  animation: fadeIn 1s ease 2.8s forwards;
+  animation: fadeIn 1s ease 3.2s forwards;
   opacity: 0;
 }
 
 .fade-in-4-mid {
-  animation: fadeIn 1s ease 3s forwards;
+  animation: fadeIn 1s ease 3.5s forwards;
   opacity: 0;
 }
 
 .fade-in-5 {
-  animation: fadeIn 1s ease 3.3s forwards;
+  animation: fadeIn 1s ease 3.8s forwards;
   opacity: 0;
 }
 
 .fade-in-5-mid {
-  animation: fadeIn 1s ease 3.6s forwards;
+  animation: fadeIn 1s ease 4s forwards;
   opacity: 0;
 }
 
 .fade-in-6 {
-  animation: fadeIn 1s ease 4s forwards;
+  animation: fadeIn 1s ease 4.3s forwards;
   opacity: 0;
 }
