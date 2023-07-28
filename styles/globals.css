@@ -73,3 +73,64 @@ div[data-theme-1] {
   );
   transition: 0.5s;
 }
+
+/* Set up common animation properties */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Use these classes to apply sequential fade-in animation to elements */
+.fade-in-1 {
+  animation: fadeIn 1s ease 0s forwards;
+  opacity: 0;
+}
+
+.fade-in-2 {
+  animation: fadeIn 1s ease 1s forwards;
+  opacity: 0;
+}
+
+.fade-in-2-mid {
+  animation: fadeIn 1s ease 1.4s forwards;
+  opacity: 0;
+}
+
+.fade-in-3 {
+  animation: fadeIn 1s ease 2s forwards;
+  opacity: 0;
+}
+
+.fade-in-3-mid {
+  animation: fadeIn 1s ease 2.3s forwards;
+  opacity: 0;
+}
+
+.fade-in-4 {
+  animation: fadeIn 1s ease 2.8s forwards;
+  opacity: 0;
+}
+
+.fade-in-4-mid {
+  animation: fadeIn 1s ease 3s forwards;
+  opacity: 0;
+}
+
+.fade-in-5 {
+  animation: fadeIn 1s ease 3.3s forwards;
+  opacity: 0;
+}
+
+.fade-in-5-mid {
+  animation: fadeIn 1s ease 3.6s forwards;
+  opacity: 0;
+}
+
+.fade-in-6 {
+  animation: fadeIn 1s ease 4s forwards;
+  opacity: 0;
+}

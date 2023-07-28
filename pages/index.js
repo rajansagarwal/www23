@@ -27,23 +27,6 @@ export default function Home() {
   useEffect(() => {
     setLoading(false);
   }, []);
-
-  if (loading) {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          backgroundColor: "black",
-          color: "white",
-        }}
-      >
-        <h1>Maker of Worlds.</h1>
-      </div>
-    );
-  }
   return (
     <main>
       {loading ? (
@@ -84,14 +67,16 @@ export default function Home() {
               }}
             >
               <Intro />
-              <Quad
-                name="Optimizing Earthquake-Resistant Buildings"
-                description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
-                tag="Shapeshift"
-                image="/shapeshift-dash.png"
-                video="/shapeshift-demo-small.gif"
-              />
-              <div className="flex flex-col gap-6">
+              <div className="fade-in-4">
+                <Quad
+                  name="Optimizing Earthquake-Resistant Buildings"
+                  description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
+                  tag="Shapeshift"
+                  image="/shapeshift-dash.png"
+                  video="/shapeshift-demo-small.gif"
+                />
+              </div>
+              <div className="flex flex-col gap-6 fade-in-4-mid">
                 <a
                   href="https://www.loom.com/share/a0d046b4d50846889e921eed98f09d35?sid=d1fe7968-e8ed-4cbd-b245-d6b39656ef19"
                   target="_blank"
@@ -163,54 +148,66 @@ export default function Home() {
                   </Grid>
                 </Link>
               </div>
+              <div className="fade-in-5">
                 <FullImage
                   name="ConnexSci: Embedding Research"
                   description="Winning Canada's Largest Hackathon"
                   // video="/connexsci-live.mp4"
                   image="https://z.rajan.sh/connexsci.png"
                 />
-              <Double
-                name="Offline Mesh Network"
-                description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
-                tag="Software Engineering"
-                stack={["Swift", "Python"]}
-                video
-                image="/zephyr-demo-small.mp4"
-              />
-              <LazyLoad>
+              </div>
+              <div className="fade-in-5-mid">
                 <Double
-                  name="Digital Humanity"
-                  description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
+                  name="Offline Mesh Network"
+                  description="Inspired by the architecture of train, Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests. Written in Swift using MultiPeer Connectivity."
                   tag="Software Engineering"
-                  video
-                  stack={["Ruby", "TypeScript", "Rust"]}
-                  image="/CSD.mp4"
-                />
-              </LazyLoad>
-              <LazyLoad>
-                <FullVideo
-                  name="The Platonist"
-                  description="A Novel: Abstract Interpretation of the Works of Plato"
-                  image="https://z.rajan.sh/collection.png"
-                  video="/platonist-loop.mp4"
-                />
-              </LazyLoad>
-              <LazyLoad>
-                <FullImage
-                  name="Etherealism: Poetry Visualizations"
-                  description="A Novel: Abstract Interpretation of the Works of Plato"
-                  image="https://z.rajan.sh/generated.png"
-                />
-              </LazyLoad>
-              <LazyLoad>
-                <Double
-                  name="Knowledge Repositories"
-                  description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
-                  tag="Communities of Knowledge"
                   stack={["Swift", "Python"]}
-                  image="https://z.rajan.sh/homepage-aire.png"
+                  video
+                  image="/zephyr-demo-small.mp4"
                 />
-              </LazyLoad>
+              </div>
+              <div className="fade-in-6">
+                <LazyLoad>
+                  <Double
+                    name="Digital Humanity"
+                    description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
+                    tag="Software Engineering"
+                    video
+                    stack={["Ruby", "TypeScript", "Rust"]}
+                    image="/CSD.mp4"
+                  />
+                </LazyLoad>
+              </div>
+              <div className="fade-in-6">
+                <LazyLoad>
+                  <FullVideo
+                    name="The Platonist"
+                    description="A Novel: Abstract Interpretation of the Works of Plato"
+                    image="https://z.rajan.sh/collection.png"
+                    video="/platonist-loop.mp4"
+                  />
+                </LazyLoad>
+              </div>
+              <div className="fade-in-6">
+                <LazyLoad>
+                  <FullImage
+                    name="Etherealism: Poetry Visualizations"
+                    description="A Novel: Abstract Interpretation of the Works of Plato"
+                    image="https://z.rajan.sh/generated.png"
+                  />
+                </LazyLoad>
+              </div>
+              <div className="fade-in-6">
+                <LazyLoad>
+                  <Double
+                    name="Knowledge Repositories"
+                    description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
+                    tag="Communities of Knowledge"
+                    stack={["Swift", "Python"]}
+                    image="https://z.rajan.sh/homepage-aire.png"
+                  />
+                </LazyLoad>
+              </div>
             </Grid.Container>
           </Grid>
           <br />
