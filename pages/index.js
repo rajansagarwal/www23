@@ -68,6 +68,8 @@ export default function Home() {
             >
               <Intro />
               <div className="fade-in-4">
+              <br className="x-desktop" />
+              <br className="x-desktop" />
                 <Quad
                   name="Optimizing Earthquake-Resistant Buildings"
                   description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."

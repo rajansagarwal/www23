@@ -7,7 +7,7 @@ export default function Intro({ name, description, image, link }) {
     <Grid
       className="aspect-[1] rounded-md transition-colors duration-300 ease-in-out cursor-pointer flex justify-between"
       style={{
-        height: "14em",
+        height: "13em",
         width: "79em",
       }}
     >
