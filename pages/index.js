@@ -68,8 +68,8 @@ export default function Home() {
             >
               <Intro />
               <div className="fade-in-4">
-              <br className="x-desktop" />
-              <br className="x-desktop" />
+                <br className="x-desktop" />
+                <br className="x-desktop" />
                 <Quad
                   name="Optimizing Earthquake-Resistant Buildings"
                   description="Shapeshift is an implementation of Fourier research, using math + policy to design affordable earthquake-resistant buildings, using the latest in machine learning to interpolate policy and extrapolate ground frequencies."
@@ -169,7 +169,6 @@ export default function Home() {
                 />
               </div>
               <div className="fade-in-6">
-                <LazyLoad>
                   <Double
                     name="Digital Humanity"
                     description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
@@ -178,29 +177,23 @@ export default function Home() {
                     stack={["Ruby", "TypeScript", "Rust"]}
                     image="/CSD.mp4"
                   />
-                </LazyLoad>
               </div>
               <div className="fade-in-6">
-                <LazyLoad>
                   <FullVideo
                     name="The Platonist"
                     description="A Novel: Abstract Interpretation of the Works of Plato"
                     image="https://z.rajan.sh/collection.png"
                     video="/platonist-loop.mp4"
                   />
-                </LazyLoad>
               </div>
               <div className="fade-in-6">
-                <LazyLoad>
                   <FullImage
                     name="Etherealism: Poetry Visualizations"
                     description="A Novel: Abstract Interpretation of the Works of Plato"
                     image="https://z.rajan.sh/generated.png"
                   />
-                </LazyLoad>
               </div>
               <div className="fade-in-6">
-                <LazyLoad>
                   <Double
                     name="Knowledge Repositories"
                     description="A more thoughtful & community-first approach to shared knowledge. Building Aire helped change the way that I understand the communication of information that, throughout my life, often felt standardized."
@@ -208,7 +201,6 @@ export default function Home() {
                     stack={["Swift", "Python"]}
                     image="https://z.rajan.sh/homepage-aire.png"
                   />
-                </LazyLoad>
               </div>
             </Grid.Container>
           </Grid>
