@@ -116,19 +116,34 @@ export default function Double({
                 <span>{name}</span>
               </p>
             </div>
-            <video
-              autoPlay
-              muted
-              loop
-              src={image}
-              className="rounded-sm"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-                width: "100%",
-                height: "100%",
-              }}
-            />
+            {video ? (
+              <video
+                autoPlay
+                muted
+                loop
+                src={image}
+                className="rounded-lg"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            ) : (
+              <Image
+                src={image}
+                width={500}
+                height={500}
+                className="rounded-lg"
+                style={{
+                  height: "100%",
+                  objectFit: "cover",
+                  width: "100%",
+                  objectPosition: "center",
+                }}
+              />
+            )}
           </div>
         </Grid>
       </div>
