@@ -5,18 +5,13 @@ import { Inter } from "@next/font/google";
 import Link from "next/link";
 import { Grid, Tabs, Text } from "@geist-ui/react";
 import { useRouter } from "next/router";
-import Card from "@/components/Card";
 import Intro from "@/components/Intro";
 import Quad from "@/components/Quad";
-import TextCard from "@/components/TextCard";
-import ImageCard from "@/components/ImageCard";
 const FullImage = dynamic(() => import("@/components/FullImage"));
 const FullVideo = dynamic(() => import("@/components/FullVideo"));
 import Double from "@/components/Double";
-import Contact from "@/components/Contact";
-import { ArrowUpRight, ArrowRight } from "@geist-ui/icons";
+import { ArrowRight } from "@geist-ui/icons";
 import { useEffect, useState } from "react";
-import LazyLoad from "react-lazyload";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -154,6 +149,7 @@ export default function Home() {
                 <FullImage
                   name="ConnexSci: Embedding Research"
                   description="Winning Canada's Largest Hackathon"
+                  link="https://devpost.com/software/connexsci-20nrjy"
                   // video="/connexsci-live.mp4"
                   image="https://z.rajan.sh/connexsci.png"
                 />
@@ -191,6 +187,7 @@ export default function Home() {
                     name="Etherealism: Poetry Visualizations"
                     description="A Novel: Abstract Interpretation of the Works of Plato"
                     image="https://z.rajan.sh/generated.png"
+                    link="https://github.com/rajanwastaken/etherealism"
                   />
               </div>
               <div className="fade-in-6">
