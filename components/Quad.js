@@ -25,11 +25,7 @@ export default function Quad({ name, description, tag, image, video, link }) {
             <span>{name}</span>
           </p>
         </div>
-        <Image
-          height={1000}
-          width={1000}
-          unoptimized={true}
-          src={video}
+        <div
           className="rounded-sm"
           style={{
             objectFit: "cover",
@@ -37,7 +33,18 @@ export default function Quad({ name, description, tag, image, video, link }) {
             width: "100%",
             height: "100%",
           }}
-        />
+        >
+          <iframe
+            src="https://www.loom.com/embed/622d0ab2bc35442e8a41577a910259c8?sid=161ad09d-7cef-4d51-8999-7fdad0d2380f?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&autoplay=1"
+            frameborder="0"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+              width: "100%",
+              height: "100%",
+            }}
+          ></iframe>
+        </div>
       </Grid>
       <div className="x-desktop">
         <Grid
