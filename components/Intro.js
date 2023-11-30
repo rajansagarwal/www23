@@ -52,12 +52,6 @@ export default function Intro({ name, description, image, link }) {
 
       <div className="x-mobile flex h-full w-full flex-col justify-between text-right fade-in-3-mid">
         <div className="px-1 flex flex-col gap-2">
-          <Link
-            href="/resume.pdf"
-            className="text-neutral-500 line-clamp-1 text-sm hover:text-neutral-200"
-          >
-            Resume
-          </Link>
           <a
             href="https://twitter.com/_rajanagarwal"
             target="_blank"

@@ -35,7 +35,7 @@ export default function Quad({ name, description, tag, image, video, link }) {
           }}
         >
           <iframe
-            src="https://www.loom.com/embed/894f18b385ad4c82a700efb10252c826?sid=3da07ddc-889b-41f9-a200-95ed7fe710f9?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&autoplay=1"
+          src="https://www.loom.com/embed/894f18b385ad4c82a700efb10252c826?sid=3da07ddc-889b-41f9-a200-95ed7fe710f9gl?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&autoplay=1"
             frameborder="0"
             style={{
               objectFit: "cover",

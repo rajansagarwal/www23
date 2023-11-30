@@ -84,7 +84,6 @@ div[data-theme-1] {
   }
 }
 
-/* Use these classes to apply sequential fade-in animation to elements */
 .fade-in-1 {
   animation: fadeIn 1s ease 0s forwards;
   opacity: 0;
