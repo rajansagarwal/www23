@@ -99,7 +99,7 @@ export default function Home() {
                   tag="Design Project"
                   stack={["Swift", "Python"]}
                   video
-                  image="/boat-5.mp4"
+                  image="/boat-6.mp4"
                 />
               </div>
               <div className="fade-in-6" style={{ flex: 1, maxWidth: "100%" }}>
