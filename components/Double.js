@@ -14,8 +14,18 @@ export default function Double({
   stack,
 }) {
 
+  const [hovered, setHovered] = useState(false);
+
+  const handleHover = () => {
+    setHovered(!hovered);
+  };
+
   return (
-    <>
+    <div
+      className="video-container"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
@@ -73,31 +83,31 @@ export default function Double({
               right: -30,
             }}
           >
-            {video ? (
+            {video === "false" || !hovered ? (
+              <Image
+              src={image}
+              width={500}
+              height={500}
+              className="rounded-lg"
+              style={{
+                height: "100%",
+                objectFit: "cover",
+                width: "100%",
+                objectPosition: "left",
+              }}
+            />
+            ) : (
               <video
                 autoPlay
                 muted
                 loop
-                src={image}
+                src={video}
                 className="rounded-lg"
                 style={{
                   objectFit: "cover",
                   objectPosition: "center",
                   width: "100%",
                   height: "100%",
-                }}
-              />
-            ) : (
-              <Image
-                src={image}
-                width={500}
-                height={500}
-                className="rounded-lg"
-                style={{
-                  height: "100%",
-                  objectFit: "cover",
-                  width: "100%",
-                  objectPosition: "left",
                 }}
               />
             )}
@@ -155,7 +165,7 @@ export default function Double({
           </div>
         </Grid>
       </div>
-    </>
+    </div>
   );
 }
 

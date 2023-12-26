@@ -98,8 +98,8 @@ export default function Home() {
                   description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
                   tag="Design Project"
                   stack={["Swift", "Python"]}
-                  video
-                  image="/boat-6.mp4"
+                  image="/boat.png"
+                  video="/boat-5.mp4"
                 />
               </div>
               <div className="fade-in-6" style={{ flex: 1, maxWidth: "100%" }}>
@@ -107,9 +107,9 @@ export default function Home() {
                   name="Digital Humanity"
                   description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
                   tag="Software Engineer Intern 2022"
-                  video
+                  image="/camp-still.png"
                   stack={["Ruby", "TypeScript", "Rust"]}
-                  image="/CSD.mp4"
+                  video="/CSD.mp4"
                 />
               </div>
               <div
@@ -121,8 +121,8 @@ export default function Home() {
                   description="Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests"
                   tag="Swift Application"
                   stack={["Swift", "Python"]}
-                  video
-                  image="/zephyr-demo-small.mp4"
+                  image="/zephyr-pic.png"
+                  video="/zephyr-demo-small.mp4"
                 />
               </div>
               <div
@@ -134,8 +134,8 @@ export default function Home() {
                   description="Connexsci is a grant funding platform that generates exposure to undervalued and independent research through graph-based analytics. Winner of Hack the North 2022."
                   tag="RESEARCH FUNDING"
                   stack={["Swift", "Python"]}
-                  video
-                  image="/connexsci-smallest.mp4"
+                  image="/connexsci.png"
+                  video="/connexsci-smallest.mp4"
                 />
               </div>
               <div
@@ -147,8 +147,8 @@ export default function Home() {
                   description="A fictional novel that navigates the works of Plato's Republik through the story of a young boy, Ryan. The novel was noted a Top 20 Philosophy Book in North America."
                   tag="FICTIONAL NOVEL"
                   stack={["Swift", "Python"]}
-                  video
-                  image="/platonist-loop.mp4"
+                  image="https://z.rajan.sh/collection.png"
+                  video="/platonist-loop.mp4"
                 />
               </div>
               <div className="fade-in-6" style={{ flex: 1, maxWidth: "100%" }}>
@@ -157,6 +157,7 @@ export default function Home() {
                   description="A school-wide platform for club management and knowledge sharing, through repositories, content, announcements and quizzes."
                   tag="Communities of Knowledge"
                   stack={["Swift", "Python"]}
+                  video="false"
                   image="https://z.rajan.sh/homepage-aire.png"
                 />
               </div>
