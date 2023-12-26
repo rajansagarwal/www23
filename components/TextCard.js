@@ -18,7 +18,7 @@ export default function TextCard({
         style={{
           height: "16.5em",
           overflow: "hidden",
-          width: "25em",
+          width: "23em",
         }}
       >
         <div>

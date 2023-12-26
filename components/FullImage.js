@@ -9,7 +9,8 @@ export default function FullImage({ name, description, image, link }) {
         className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer relative"
         style={{
           height: "20em",
-          width: "25em",
+          width: "80%",
+          maxWidth: '15em',
         }}
       >
         <div className="flex h-full w-full flex-col justify-between">

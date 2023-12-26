@@ -8,4 +8,10 @@ const nextConfig = {
   },
 };
  
-export default million.next(nextConfig, { auto: true });
+const millionConfig = {
+  auto: true,
+  // if you're using RSC:
+  // auto: { rsc: true },
+}
+ 
+export default million.next(nextConfig, millionConfig);

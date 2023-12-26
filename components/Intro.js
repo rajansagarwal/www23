@@ -7,25 +7,25 @@ export default function Intro({ name, description, image, link }) {
     <Grid
       className="aspect-[1] rounded-md transition-colors duration-300 ease-in-out cursor-pointer flex justify-between"
       style={{
-        height: "13em",
-        width: "79em",
+        height: "11em",
+        width: "100em",
       }}
     >
       <div className="flex h-full w-full flex-col justify-between">
         <div className="px-1">
-          <h3 className="font-serif-variation mt-3 mb-5 font-serif text-3xl text-white font-normal md:text-2xl lg:text-3xl">
+          <h2 className="font-serif-variation mt-3 mb-5 font-serif text-4xl text-white font-normal md:text-3xl lg:text-4xl">
             rajan agarwal{" "}
-            <span className="text-neutral-400 fade-in-2">
-              is exploring the{" "}
+            {/* <span className="text-neutral-400 fade-in-2">
+              is a software engineer{" "}
             </span>
             <br className="x-mobile" />
             <span className="text-neutral-400 fade-in-2-semi">
-              interplay between
+              solving problems with
             </span>{" "}
-            <span className="font-serif fade-in-2-mid">design</span>{" "}
+            <span className="font-serif fade-in-2-mid">novel</span>{" "}
             <span className="text-neutral-400 fade-in-2-mid">and</span>{" "}
-            <span className="font-serif fade-in-2-mid">engineering.</span>
-          </h3>
+            <span className="font-serif fade-in-2-mid">intricate</span> */}
+          </h2>
           <p className="text-neutral-400 text-sm">
             <a
               className="text-neutral-300 fade-in-3"
@@ -43,8 +43,9 @@ export default function Intro({ name, description, image, link }) {
             </a>
           </p>
           <p className="text-neutral-500 line-clamp-1 text-sm fade-in-3-mid">
-            Currently Building Shapeshift. Prev Arterial, Hack Club, Camp
-            Social. <br />
+            Currently Building Portal. <br />
+            Prev Software Engineer Shapeshift, Arterial, Hack Club, Camp Social.{" "}
+            <br />
             Looking for Work Summer 2024.
           </p>
         </div>
@@ -61,12 +62,20 @@ export default function Intro({ name, description, image, link }) {
             Twitter
           </a>
           <a
-            href="https://github.com/rajanwastaken"
+            href="https://github.com/rajansagarwal"
             target="_blank"
             rel="noreferrer"
             className="hover:text-neutral-200 text-neutral-500 line-clamp-1 text-sm"
           >
             Github
+          </a>
+          <a
+            href="https://linkedin.com/in/rajansagarwal"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-neutral-200 text-neutral-500 line-clamp-1 text-sm"
+          >
+            Linkedin
           </a>
         </div>
       </div>

@@ -34,16 +34,32 @@ export default function Quad({ name, description, tag, image, video, link }) {
             height: "100%",
           }}
         >
-          <iframe
-          src="https://www.loom.com/embed/894f18b385ad4c82a700efb10252c826?sid=3da07ddc-889b-41f9-a200-95ed7fe710f9gl?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&autoplay=1"
-            frameborder="0"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              width: "100%",
-              height: "100%",
-            }}
-          ></iframe>
+          {tag === "Shapeshift" ? (
+            <iframe
+              src="https://www.loom.com/embed/894f18b385ad4c82a700efb10252c826?sid=3da07ddc-889b-41f9-a200-95ed7fe710f9gl?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&autoplay=1"
+              frameborder="0"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "100%",
+              }}
+            ></iframe>
+          ) : (
+            <iframe
+              src="https://www.youtube.com/embed/Vmupugz2M1s?si=6UAs96zcZfRVgryd&autoplay=1&start=120&mute=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "100%",
+              }}
+            ></iframe>
+          )}
         </div>
       </Grid>
       <div className="x-desktop">

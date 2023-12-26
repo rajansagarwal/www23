@@ -50,7 +50,7 @@ export default function Home() {
             className="aspect-[1] rounded-md transition-colors duration-300 ease-in-out cursor-pointer"
             style={{
               height: "11em",
-              width: "79em",
+              width: "90em",
             }}
           >
             <div className="flex h-full w-full flex-col justify-between items-center">

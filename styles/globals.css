@@ -68,8 +68,8 @@ div[data-theme-1] {
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.4)
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5)
   );
   transition: 0.5s;
 }
@@ -90,51 +90,55 @@ div[data-theme-1] {
 }
 
 .fade-in-2 {
-  animation: fadeIn 1s ease 1s forwards;
+  animation: fadeIn 1s ease 0.8s forwards;
   opacity: 0;
 }
 
 .fade-in-2-semi {
-  animation: fadeIn 1s ease 1.2s forwards;
+  animation: fadeIn 1s ease 0.9s forwards;
   opacity: 0;
 }
 
 .fade-in-2-mid {
-  animation: fadeIn 1s ease 1.4s forwards;
+  animation: fadeIn 1s ease 1s forwards;
   opacity: 0;
 }
 
 .fade-in-3 {
-  animation: fadeIn 1s ease 2s forwards;
+  animation: fadeIn 1s ease 0.8s forwards;
   opacity: 0;
 }
 
 .fade-in-3-mid {
-  animation: fadeIn 1s ease 2.3s forwards;
+  animation: fadeIn 1s ease 0.9s forwards;
   opacity: 0;
 }
 
 .fade-in-4 {
-  animation: fadeIn 1s ease 3.2s forwards;
+  animation: fadeIn 1s ease 1s forwards;
   opacity: 0;
 }
 
 .fade-in-4-mid {
-  animation: fadeIn 1s ease 3.5s forwards;
+  animation: fadeIn 1s ease 1.2s forwards;
   opacity: 0;
 }
 
 .fade-in-5 {
-  animation: fadeIn 1s ease 3.8s forwards;
+  animation: fadeIn 1s ease 1.4s forwards;
   opacity: 0;
 }
 
 .fade-in-5-mid {
-  animation: fadeIn 1s ease 4s forwards;
+  animation: fadeIn 1s ease 1.6s forwards;
   opacity: 0;
 }
 
 .fade-in-6 {
-  animation: fadeIn 1s ease 4.3s forwards;
+  animation: fadeIn 1s ease 1.8s forwards;
   opacity: 0;
+}
+
+#imageContainer {
+  overflow: hidden;
 }

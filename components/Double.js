@@ -1,4 +1,5 @@
 import { Grid } from "@geist-ui/react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import FullVideo from "./FullVideo";
 import ReactMarkdown from "react-markdown";
@@ -12,13 +13,16 @@ export default function Double({
   video,
   stack,
 }) {
+
   return (
     <>
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
-          height: "20em",
-          width: "52em",
+          height: "20rem",
+          width: "100%",
+          maxWidth: "100rem",
+          minWidth: "35rem",
           overflow: "hidden",
           position: "relative",
         }}
@@ -30,8 +34,12 @@ export default function Double({
               flexBasis: "50%",
             }}
           >
-            <div className="flex items-center justify-between pl-4 pr-2 pt-2 text-sm tracking-tight text-neutral-400">
-              <div className="bg-rose-400/40 text-rose-300 inline-block rounded px-1.5 pt-0.5 pb-1 font-mono text-xs tracking-tight shadow-inset-skeuo">
+            <div
+              className={`flex items-center justify-between pl-4 pr-2 pt-2 text-sm tracking-tight text-neutral-400`}
+            >
+              <div
+                className={`bg-blue-400/40 text-blue-300 inline-block rounded px-1.5 pt-0.5 pb-1 font-mono text-xs tracking-tight shadow-inset-skeuo`}
+              >
                 <span>{tag.toUpperCase()}</span>
               </div>
             </div>
@@ -101,7 +109,7 @@ export default function Double({
           className={`aspect-[1] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
           style={{
             height: "20em",
-            width: "25em",
+            width: "23rem",
           }}
         >
           <div className="flex h-full w-full flex-col justify-between">
