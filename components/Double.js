@@ -118,7 +118,8 @@ export default function Double({
           className={`aspect-[1] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
           style={{
             height: "20em",
-            width: "23rem",
+            width: "100%",
+
           }}
         >
           <div className="flex h-full w-full flex-col justify-between">

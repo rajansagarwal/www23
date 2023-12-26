@@ -8,9 +8,9 @@ export default function Large({ name, description, tag, image, video, link }) {
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
-          height: "33em",
-          width: "100%", // Adjusted width property
-          maxWidth: "90vw",
+          height: "32em",
+          width: "100%",
+          maxWidth: "90em",
           overflow: "hidden",
           position: "relative",
         }}
@@ -85,10 +85,10 @@ export default function Large({ name, description, tag, image, video, link }) {
       </Grid>
       <div className="x-desktop">
         <Grid
-          className={`aspect-[1] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
+          className={`aspect-[2] bg-zinc-900 rounded-md transition-colors duration-300 ease-in-out cursor-pointer relative`}
           style={{
-            height: "15em",
-            width: "23em",
+            height: "20em",
+            width: "100%",
           }}
         >
           <div className="flex h-full w-full flex-col justify-between">

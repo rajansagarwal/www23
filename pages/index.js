@@ -59,8 +59,8 @@ export default function Home() {
                 gap: "2rem",
                 justifyContent: "center",
                 alignItems: "center",
-                width: "100%",
-                maxWidth: "90vw",
+                width: "90vw",
+                maxWidth: "90em",
                 margin: "0 5vw",
               }}
             >
