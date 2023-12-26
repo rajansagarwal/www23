@@ -29,22 +29,7 @@ export default function FullVideo({ name, description, image, video, link }) {
             <span>{name}</span>
           </p>
         </div>
-        {hovered ? (
-          <video
-            autoPlay
-            muted
-            loop
-            src={video}
-            className="rounded-sm"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              width: "100%",
-              height: "100%",
-            }}
-          />
-        ) : (
-          <Image
+        <Image
             src={image}
             width={500}
             height={500}
@@ -56,7 +41,6 @@ export default function FullVideo({ name, description, image, video, link }) {
               height: "100%",
             }}
           />
-        )}
       </div>
     </Grid>
   );

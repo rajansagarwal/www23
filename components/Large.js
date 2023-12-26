@@ -8,9 +8,9 @@ export default function Large({ name, description, tag, image, video, link }) {
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
-          height: "35em",
+          height: "33em",
           width: "100%", // Adjusted width property
-          maxWidth: "100rem",
+          maxWidth: "90vw",
           overflow: "hidden",
           position: "relative",
         }}
@@ -21,7 +21,7 @@ export default function Large({ name, description, tag, image, video, link }) {
             objectFit: "cover",
             objectPosition: "center",
             width: "100%",
-            height: "80%",
+            height: "85%",
           }}
         >
           {tag === "Shapeshift" ? (

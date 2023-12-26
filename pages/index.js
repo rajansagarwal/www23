@@ -60,8 +60,8 @@ export default function Home() {
                 justifyContent: "center",
                 alignItems: "center",
                 width: "100%",
-                maxWidth: "100rem",
-                margin: "0 3rem",
+                maxWidth: "90vw",
+                margin: "0 5vw",
               }}
             >
               <Intro />
@@ -161,6 +161,7 @@ export default function Home() {
                   image="https://z.rajan.sh/homepage-aire.png"
                 />
               </div>
+              <br/><br/><br/>
             </Grid.Container>
           </Grid>
           <br />

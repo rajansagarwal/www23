@@ -13,7 +13,6 @@ export default function Double({
   video,
   stack,
 }) {
-
   const [hovered, setHovered] = useState(false);
 
   const handleHover = () => {
@@ -85,17 +84,17 @@ export default function Double({
           >
             {video === "false" || !hovered ? (
               <Image
-              src={image}
-              width={500}
-              height={500}
-              className="rounded-lg"
-              style={{
-                height: "100%",
-                objectFit: "cover",
-                width: "100%",
-                objectPosition: "left",
-              }}
-            />
+                src={image}
+                width={500}
+                height={500}
+                className="rounded-lg"
+                style={{
+                  height: "100%",
+                  objectFit: "cover",
+                  width: "100%",
+                  objectPosition: "left",
+                }}
+              />
             ) : (
               <video
                 autoPlay
@@ -134,34 +133,18 @@ export default function Double({
                 <span>{name}</span>
               </p>
             </div>
-            {video ? (
-              <video
-                autoPlay
-                muted
-                loop
-                src={image}
-                className="rounded-lg"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            ) : (
-              <Image
-                src={image}
-                width={500}
-                height={500}
-                className="rounded-lg"
-                style={{
-                  height: "100%",
-                  objectFit: "cover",
-                  width: "100%",
-                  objectPosition: "center",
-                }}
-              />
-            )}
+            <Image
+              src={image}
+              width={500}
+              height={500}
+              className="rounded-lg"
+              style={{
+                height: "100%",
+                objectFit: "cover",
+                width: "100%",
+                objectPosition: "center",
+              }}
+            />
           </div>
         </Grid>
       </div>
