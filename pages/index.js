@@ -47,21 +47,23 @@ export default function Home() {
             />
           </Head>
           <Grid
+            container
             style={{
               marginTop: "2rem",
+              display: "flex",
+              justifyContent: "center",
             }}
           >
             <Grid.Container
               gap={2}
-              justify="center"
               style={{
                 display: "flex",
-                gap: "2rem",
                 justifyContent: "center",
                 alignItems: "center",
+                gap: '2rem',
+                maxWidth: "100em",
+                margin: "0 4vw",
                 width: "90vw",
-                maxWidth: "90em",
-                margin: "0 5vw",
               }}
             >
               <Intro />
@@ -161,7 +163,9 @@ export default function Home() {
                   image="https://z.rajan.sh/homepage-aire.png"
                 />
               </div>
-              <br/><br/><br/>
+              <br />
+              <br />
+              <br />
             </Grid.Container>
           </Grid>
           <br />

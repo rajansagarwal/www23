@@ -8,7 +8,7 @@ export default function Large({ name, description, tag, image, video, link }) {
       <Grid
         className="blurbottom x-mobile aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
         style={{
-          height: "32em",
+          height: "35em",
           width: "100%",
           maxWidth: "90em",
           overflow: "hidden",
