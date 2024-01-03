@@ -55,7 +55,7 @@ export default function Home() {
           >
             <div className="flex h-full w-full flex-col justify-between items-center">
               <div className="px-1">
-                <h3 className=" text-center font-mono-variation mt-3 mb-5 font-mono text-3xl text-white font-bold md:text-4xl lg:text-5xl">
+                <h3 className=" text-center font-mono mt-3 mb-5 text-3xl text-white font-bold md:text-4xl lg:text-5xl">
                   SHAPESHIFT
                 </h3>
                 <p className="text-center text-neutral-500 line-clamp-1 text-sm">
