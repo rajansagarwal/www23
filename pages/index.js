@@ -36,10 +36,16 @@ export default function Home() {
       ) : (
         <>
           <Head>
-            <title>Rajan Agarwal</title>
+            <title>
+              Rajan Agarwal - Software Engineer | University of Waterloo
+            </title>
             <meta
               name="description"
-              content="Rajan Agarwal - 18 year-old Software Engineer studying at the University of Waterloo. Rajan is currently building Shapeshift, a due-diligence optimization platform to streamline the production of earthquake-ressitant buildings. Previously, he has worked at Arterial, Camp Social and Hack Club. Rajan is presently looking for work in Summer 2024."
+              content="Rajan Agarwal is an 18-year-old Software Engineer studying at the University of Waterloo. Explore his work on Shapeshift, a due-diligence optimization platform for earthquake-resistant buildings. Check out his experience at Arterial, Camp Social, and Hack Club. Rajan is seeking work opportunities for Summer 2024."
+            />
+            <meta
+              name="keywords"
+              content="Rajan Agarwal, Software Engineer, University of Waterloo, Shapeshift, earthquake-resistant buildings, Arterial, Camp Social, Hack Club, Summer 2024 jobs, Rajan, Agarwal, Toronto, Portal, Wearable, Tab"
             />
             <link
               rel="icon"
@@ -60,7 +66,7 @@ export default function Home() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                gap: '2rem',
+                gap: "2rem",
                 maxWidth: "100em",
                 margin: "0 4vw",
                 width: "90vw",
