@@ -1,47 +1,61 @@
-import { Grid, Tabs, Text } from "@geist-ui/react";
-import { ArrowUpRight } from "@geist-ui/icons";
+import { Grid } from "@geist-ui/react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import FullVideo from "./FullVideo";
+import ReactMarkdown from "react-markdown";
 
-export default function Card({ name, description, image, link }) {
+export default function Card({
+  name,
+  description,
+  tag,
+  image,
+  link,
+}) {
+  const [hovered, setHovered] = useState(false);
+
+  const handleHover = () => {
+    setHovered(!hovered);
+  };
+
   return (
-    <Grid
-      className="aspect-[1] bg-zinc-900 rounded-md hover:bg-zinc-800 transition-colors duration-300 ease-in-out cursor-pointer"
+    <div
       style={{
-        height: "16.5em",
-        width: "25em",
+        width: "100%",
+        maxHeight: "23.5rem",
+        paddingBottom: "2rem",
+        position: "relative",
+        cursor: "pointer",
       }}
+      onClick={() => window.open(link)}
+      className="small-big"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      <div className="flex h-full w-full flex-col justify-between">
-        <div className="flex items-center justify-between p-3 text-sm tracking-tight text-neutral-400">
-          <div className="bg-emerald-400/40 text-emerald-300 inline-block rounded px-1.5 pt-0.5 pb-1 font-serif text-xs tracking-tight shadow-inset-skeuo">
-            <span>AI FOR HUMANITY</span>
-          </div>
-        </div>
-        <div className="p-3">
-          <h3 className="font-serif-variation mt-3 mb-5 font-serif text-3xl text-white font-light md:text-4xl lg:text-5xl">
-            Rajan Agarwal
-          </h3>
-          <p className="text-neutral-400 text-sm">
-            <a
-              className="text-neutral-300"
-              href="https://se-webring.xyz/"
-              rel="noreferrer"
-              target="_blank"
-              style={{
-                display: "flex",
-              }}
-            >
-              Software Engineer @ University of Waterloo{" "}
-              <span>
-                <ArrowUpRight size={10} />
-              </span>{" "}
-            </a>
-          </p>
-          <p className="text-neutral-500 line-clamp-1 text-sm">
-            Currently Building Shapeshift. Prev Arterial, Hack Club, Camp
-            Social. Available for Work Summ.
-          </p>
-        </div>
+      <Image
+        src={image}
+        width={500}
+        height={500}
+        className="rounded-lg"
+        style={{
+          height: "100%",
+          width: "100%",
+          aspectRatio: "1 / 1",
+          objectFit: "cover",
+          objectPosition: "center",
+          opacity: hovered ? 1 : 0.9,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          bottom: "2rem",
+          left: "1rem",
+        }}
+      >
+        <p className="text-white font-bricolage-grotesque h-full w-full px-2 bg-slate-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-30 saturate-50 backdrop-contrast-100 rounded-sm">
+          <span>{name}</span>
+        </p>
       </div>
-    </Grid>
+    </div>
   );
 }

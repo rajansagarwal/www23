@@ -9,22 +9,13 @@ export default function Intro({ name, description, image, link }) {
       style={{
         height: "11em",
         width: "100em",
+        padding: "0 1rem"
       }}
     >
       <div className="flex h-full w-full flex-col justify-between">
         <div className="px-1">
-          <h2 className="font-serif-variation mt-3 mb-5 font-serif text-4xl text-white font-normal md:text-3xl lg:text-4xl">
-            rajan agarwal{" "}
-            {/* <span className="text-neutral-400 fade-in-2">
-              is a software engineer{" "}
-            </span>
-            <br className="x-mobile" />
-            <span className="text-neutral-400 fade-in-2-semi">
-              solving problems with
-            </span>{" "}
-            <span className="font-serif fade-in-2-mid">novel</span>{" "}
-            <span className="text-neutral-400 fade-in-2-mid">and</span>{" "}
-            <span className="font-serif fade-in-2-mid">intricate</span> */}
+          <h2 className="mt-3 mb-5 text-4xl text-white md:text-3xl lg:text-4xl">
+            rajan agarwal
           </h2>
           <p className="text-neutral-400 text-sm">
             <a
@@ -52,7 +43,7 @@ export default function Intro({ name, description, image, link }) {
       </div>
 
       <div className="x-mobile flex h-full w-full flex-col justify-between text-right fade-in-3-mid">
-        <div className="px-1 flex flex-col gap-2">
+        <div className="px-1 flex flex-row gap-2">
           <a
             href="https://twitter.com/_rajanagarwal"
             target="_blank"

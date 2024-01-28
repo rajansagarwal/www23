@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/BricolageGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap'); */
+
 html,
 body,
 main {
@@ -73,8 +82,7 @@ div[data-theme-1] {
   );
   transition: 0.5s;
 }
-
-/* Set up common animation properties */
+/*
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -138,7 +146,32 @@ div[data-theme-1] {
   animation: fadeIn 1s ease 1.8s forwards;
   opacity: 0;
 }
+*/
 
 #imageContainer {
   overflow: hidden;
+}
+
+.small-big {
+  margin: "0 1rem",
+}
+
+.moving {
+  grid-template-columns: (3, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .moving {
+    grid-template-columns: (2, 1fr);
+  }
+  .small-big {
+    margin: "0 0rem",
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .moving {
+    grid-template-columns: (1, 1fr);
+  }
 }

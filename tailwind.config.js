@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'bricolage-grotesque': ['Bricolage Grotesque', 'sans-serif'],
+    },
   },
   plugins: [],
 }
