@@ -2,7 +2,6 @@ import { Grid } from "@geist-ui/react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import FullVideo from "./FullVideo";
-import ReactMarkdown from "react-markdown";
 
 export default function Double({
   name,

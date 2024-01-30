@@ -9,8 +9,10 @@ export default function FullVideo({ video }) {
       style={{
         width: "100%",
         maxHeight: "30rem",
-        margin: "0 1rem",
-        paddingBottom: "2rem",
+        // paddingBottom: "2rem",
+        position: "relative",
+        cursor: "pointer",
+        // paddingBottom: "2rem",
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

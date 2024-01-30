@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Grid, Tabs, Text } from "@geist-ui/react";
-import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 
 export default function TextCard({
@@ -47,7 +46,6 @@ export default function TextCard({
               }}
               suppressHydrationWarning
             >
-              <ReactMarkdown>{description}</ReactMarkdown>
             </div>
           </div>
         </div>

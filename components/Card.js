@@ -2,7 +2,6 @@ import { Grid } from "@geist-ui/react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import FullVideo from "./FullVideo";
-import ReactMarkdown from "react-markdown";
 
 export default function Card({
   name,
@@ -22,7 +21,7 @@ export default function Card({
       style={{
         width: "100%",
         maxHeight: "23.5rem",
-        paddingBottom: "2rem",
+        // paddingBottom: "2rem",
         position: "relative",
         cursor: "pointer",
       }}
@@ -48,7 +47,7 @@ export default function Card({
       <div
         style={{
           position: "absolute",
-          bottom: "2rem",
+          bottom: "0",
           left: "1rem",
         }}
       >

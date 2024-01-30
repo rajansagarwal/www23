@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "@geist-ui/icons";
 import FullVideo from "./FullVideo";
-import ReactMarkdown from "react-markdown";
 
 export default function Title({
   name,
@@ -25,8 +24,8 @@ export default function Title({
       className="font-bricolage-grotesque small-big pb-lg"
       style={{
         width: "100%",
-        height: "28rem",
-        maxHeight: "28rem",
+        height: "30rem",
+        maxHeight: "30rem",
         borderRadius: "0.7rem",
         position: "relative",
         color: "white",
@@ -74,7 +73,7 @@ export default function Title({
         style={{
           position: "absolute",
           bottom: "1rem",
-          left: "2rem",
+          left: "30px",
           maxWidth: "100%",
         }}
       >
