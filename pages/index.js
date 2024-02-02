@@ -78,7 +78,6 @@ export default function Home() {
               <Card
                 name="Self-Driving Tank"
                 description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-                tag="Design Project"
                 link="https://github.com/rajansagarwal/self-driving-tank"
                 image="/boat.png"
               />
@@ -87,7 +86,6 @@ export default function Home() {
               <Card
                 name="Immersive Wearable AI"
                 description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-                tag="Design Project"
                 link="https://www.youtube.com/watch?v=Vmupugz2M1s&t=1s&ab_channel=RajanAgarwal"
                 image="/portal-landing.png"
               />
@@ -96,7 +94,6 @@ export default function Home() {
               <Card
                 name="Reverse Engineering Earthquakes"
                 description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-                tag="Design Project"
                 link="https://www.loom.com/share/894f18b385ad4c82a700efb10252c826"
                 image="/shapeshift-talk.png"
               />
@@ -105,7 +102,6 @@ export default function Home() {
               <Card
                 name="Restoring Digital Humanity"
                 description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
-                tag="Software Engineer Intern 2022"
                 link="https://www.linkedin.com/company/campsocial/"
                 image="/cs_shots.png"
               />
@@ -114,7 +110,6 @@ export default function Home() {
               <Card
                 name="Self Driving Vehicle, WATonomous"
                 description="As a Software Engineer at Camp Social, I worked to help digital communities coordinate efforts, share resources, and achieve positive-sum outcomes. Working with Tyepscript, Ruby on Rails and Solidity, I wrote thousands of lines of production code."
-                tag="Software Engineer Intern 2022"
                 link="https://www.watonomous.ca/"
                 image="/watonomous.png"
               />
@@ -123,7 +118,6 @@ export default function Home() {
               <Card
                 name="Offline Mesh Network"
                 description="Zephyr is an offline mesh network that uses neighbouring devices as P2P nodes for long-distance interaction, for both simple messages and complex POST-requests"
-                tag="Swift Application"
                 link="https://github.com/rajansagarwal/zephyr"
                 image="/zephyr-pic.png"
               />
@@ -132,7 +126,6 @@ export default function Home() {
               <Card
                 name="Research Public Funding Model"
                 description="Connexsci is a grant funding platform that generates exposure to undervalued and independent research through graph-based analytics. Winner of Hack the North 2022."
-                tag="RESEARCH FUNDING"
                 link="https://devpost.com/software/connexsci-20nrjy"
                 image="/connexsci_shots.png"
               />
@@ -141,7 +134,6 @@ export default function Home() {
               <Card
                 name="The Platonist: Fictional Novel"
                 description="A fictional novel that navigates the works of Plato's Republik through the story of a young boy, Ryan. The novel was noted a Top 20 Philosophy Book in North America."
-                tag="FICTIONAL NOVEL"
                 link="https://www.amazon.ca/Platonist-Awake-Dreaming-Rajan-Agarwal/dp/B0BRDD3QLQ/ref=sr_1_1?crid=2QCBOE10VAEAW&keywords=the+platonist+rajan&qid=1706422953&s=books&sprefix=the+platonist+rajan%2Cstripbooks%2C505&sr=1-1"
                 image="https://z.rajan.sh/collection.png"
               />
@@ -150,7 +142,6 @@ export default function Home() {
               <Card
                 name="Knowledge Repositories"
                 description="A school-wide platform for club management and knowledge sharing, through repositories, content, announcements and quizzes."
-                tag="Communities of Knowledge"
                 image="/homepage_aire_shots.png"
                 link="https://github.com/rajansagarwal"
               />

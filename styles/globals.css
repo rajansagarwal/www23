@@ -23,6 +23,16 @@ main {
   padding: 2vh 2vw;
 }
 
+::moz-selection {
+  background: rgb(100,100,100) !important;
+  color: black !important;
+}
+
+::selection {
+  background: rgb(100,100,100) !important;
+  color: black !important;
+}
+
 @media (max-width: 1200px) {
   main {
     padding: 0;
