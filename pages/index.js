@@ -9,6 +9,9 @@ import { Grid, Tabs, Text } from "@geist-ui/react";
 import { useRouter } from "next/router";
 import Intro from "@/components/Intro";
 import Card from "@/components/Card";
+import TextCard from "@/components/TextCard";
+import Articles from "@/components/Articles";
+import Stats from "@/components/Stats";
 import Title from "@/components/Title";
 const FullImage = dynamic(() => import("@/components/FullImage"));
 const FullVideo = dynamic(() => import("@/components/FullVideo"));
@@ -113,6 +116,20 @@ export default function Home() {
                 link="https://www.watonomous.ca/"
                 image="/watonomous.png"
               />
+            </Grid>
+            <Grid xs={24} md={12} lg={8}>
+              <Articles />
+            </Grid>
+            <Grid xs={24} md={12} lg={8}>
+              <Card
+                name="Half Marathon"
+                description="Connexsci is a grant funding platform that generates exposure to undervalued and independent research through graph-based analytics. Winner of Hack the North 2022."
+                link="https://devpost.com/software/connexsci-20nrjy"
+                image="/half-marathon.png"
+              />
+            </Grid>
+            <Grid xs={24} md={12} lg={8}>
+              <Stats />
             </Grid>
             <Grid xs={24} md={12} lg={8}>
               <Card
