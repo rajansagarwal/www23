@@ -73,9 +73,7 @@ export default function Home() {
               <Title />
             </Grid>
             <Grid xs={0} md={12} lg={16}>
-              <FullVideo
-                video="/updated-intro-small.mp4"
-              />
+              <FullVideo video="/updated-intro-small.mp4" />
             </Grid>
             <Grid xs={24} md={12} lg={8}>
               <Card

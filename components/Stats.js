@@ -3,14 +3,7 @@ import { Grid, Tabs, Text } from "@geist-ui/react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function Stats({
-  name,
-  description,
-  image,
-  date,
-  tag,
-  link,
-}) {
+export default function Stats({ name, description, image, date, tag, link }) {
   const [articles, setArticles] = useState([]);
 
   return (
@@ -36,20 +29,20 @@ export default function Stats({
             WebkitBoxOrient: "vertical",
             wordWrap: "break-word",
             lineHeight: "1.8em",
-            display: 'flex',
+            display: "flex",
             flexDirection: "column",
           }}
           suppressHydrationWarning
         >
-            Lines of Code Written:
-            <ul className="text-neutral-400">
-             <li>Python: 20730 lines</li>
-             <li>Javascript/Typescript: 12328 lines</li>
-             <li>Ruby: 850 lines</li>
-             <li>C/C++: 2415 lines</li>
-             <li>Jupyter Notebook: 4361 lines</li>
-             <li>Solidity: 554 lines</li>
-            </ul>
+          Lines of Code Written:
+          <ul className="text-neutral-400">
+            <li>Python: 20730 lines</li>
+            <li>Javascript/Typescript: 12328 lines</li>
+            <li>Ruby: 850 lines</li>
+            <li>C/C++: 2415 lines</li>
+            <li>Jupyter Notebook: 4361 lines</li>
+            <li>Solidity: 554 lines</li>
+          </ul>
         </div>
       </div>
     </div>
