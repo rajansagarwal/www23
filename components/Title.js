@@ -21,10 +21,9 @@ export default function Title({
 
   return (
     <div
-      className="font-bricolage-grotesque small-big pb-lg"
+      className="font-bricolage-grotesque small-big pb-lg h-[25rem] md:h-[30rem]"
       style={{
         width: "100%",
-        height: "30rem",
         maxHeight: "30rem",
         borderRadius: "0.7rem",
         position: "relative",
@@ -33,7 +32,7 @@ export default function Title({
       }}
     >
         <div
-        className="px-1"
+        className="md:px-1"
         style={{
           position: "absolute",
           top: "2rem",
@@ -86,20 +85,12 @@ export default function Title({
             href="https://se-webring.xyz/"
             rel="noreferrer"
             target="_blank"
-            style={{
-              display: "flex",
-            }}
           >
-            Software Engineer @ University of Waterloo{" "}
-            <span>
-              <ArrowUpRight size={10} />
-            </span>{" "}
+            Software Engineering @ Waterloo
           </a>
         </p>
         <p className="text-neutral-500 line-clamp-1 text-sm fade-in-3-mid font-bricolage-grotesque">
-          Currently Building Portal.
-          <br />
-          Looking for Work Summer 2024.
+          Software Engineer @ Thales & WATonomous.
         </p>
       </div>
     </div>

@@ -33,12 +33,12 @@ export default function Card({
       <Image
         src={image}
         width={500}
-        height={500}
+        height={300}
         className="rounded-lg"
         style={{
           height: "100%",
           width: "100%",
-          aspectRatio: "1 / 1",
+          aspectRatio: "4 / 3",
           objectFit: "cover",
           objectPosition: "center",
           opacity: hovered ? 1 : 0.9,
