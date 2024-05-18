@@ -39,7 +39,7 @@ export default function Articles({
     >
       <div className="p-7">
         <h3 className="font-serif-variation mt-3 mb-8 font-bricolage-grotesque text-4xl text-white font-normal md:text-3xl lg:text-4xl">
-          Recent Things I've Read
+          Recent Things I&#39;ve Read
         </h3>
         <div
           className="text-neutral-400 text-sm line-clamp-1"
