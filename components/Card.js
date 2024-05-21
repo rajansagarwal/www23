@@ -48,10 +48,10 @@ export default function Card({
         style={{
           position: "absolute",
           bottom: "0",
-          left: "1rem",
+          left: "0.5rem",
         }}
       >
-        <p className="text-white font-bricolage-grotesque h-full w-full px-2 bg-slate-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-30 saturate-50 backdrop-contrast-100 rounded-sm">
+        <p className="text-white font-bricolage-grotesque h-full w-full px-1 bg-slate-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-30 saturate-50 backdrop-contrast-100 rounded-sm">
           <span>{name}</span>
         </p>
       </div>

@@ -17,6 +17,7 @@ main {
   overflow-x: hidden;
   height: 100vh;
   background-color: black;
+  color: white;
 }
 
 main {
@@ -24,12 +25,12 @@ main {
 }
 
 ::moz-selection {
-  background: rgb(100,100,100) !important;
+  background: rgb(255, 255, 255) !important;
   color: black !important;
 }
 
 ::selection {
-  background: rgb(100,100,100) !important;
+  background: rgb(255, 255, 255) !important;
   color: black !important;
 }
 
