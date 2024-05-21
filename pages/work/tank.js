@@ -138,7 +138,7 @@ export default function Home() {
                   style={{
                     objectFit: "cover",
                     objectPosition: "center",
-                    aspectRatio: "5 / 2",
+                    aspectRatio: "5 / 3",
                   }}
                 />
                 <p>
@@ -162,7 +162,7 @@ export default function Home() {
                   style={{
                     objectFit: "cover",
                     objectPosition: "center",
-                    aspectRatio: "5 / 2",
+                    aspectRatio: "5 / 3",
                   }}
                 />
                 <p>
