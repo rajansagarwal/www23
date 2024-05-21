@@ -55,20 +55,21 @@ export default function Home() {
                   earthquake crises.
                 </p>
                 <br />
-                <Image
-                  src={"/tank.png"}
-                  width={1000}
-                  height={600}
-                  className="rounded-lg"
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "center",
-                    maxWidth: "100%",
-                  }}
-                />
               </div>
+              <Image
+                src={"/shapeshift-talk.png"}
+                width={1000}
+                height={600}
+                className="rounded-lg w-[100%] md:w-[75%] lg:w-[70%]"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  aspectRatio: "2 / 1",
+                }}
+              />
+              <br />
 
-              <div className="text-white text-lg w-[100%] md:w-[75%] lg:w-[70%] pb-[10rem]">
+              <div className="text-white text-lg w-[100%] md:w-[75%] lg:w-[60%] pb-[10rem]">
                 <p>
                   In November 1755, hell broke out in the capital of Portugal.
                   Lisbon, and all that the country encompassed, fell to one of

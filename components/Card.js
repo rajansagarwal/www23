@@ -2,6 +2,7 @@ import { Grid } from "@geist-ui/react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import FullVideo from "./FullVideo";
+import Link from "next/link"
 
 export default function Card({
   name,
@@ -17,7 +18,7 @@ export default function Card({
   };
 
   return (
-    <div
+    <Link
       style={{
         width: "100%",
         maxHeight: "23.5rem",
@@ -25,7 +26,8 @@ export default function Card({
         position: "relative",
         cursor: "pointer",
       }}
-      onClick={() => window.open(link)}
+      // onClick={() => window.open(link)}
+      href={link}
       className="small-big"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -55,6 +57,6 @@ export default function Card({
           <span>{name}</span>
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

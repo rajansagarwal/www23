@@ -71,7 +71,7 @@ export default function Home() {
             <Card
               name="Train Automation & Signal Processing"
               description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-              link="https://www.youtube.com/watch?v=Vmupugz2M1s&t=1s&ab_channel=RajanAgarwal"
+              link="/work/train-automation"
               image="/nyct.png"
             />
           </Grid>
@@ -79,7 +79,7 @@ export default function Home() {
             <Card
               name="Embeddings Visualization"
               description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-              link="https://github.com/socratica-org/matchmaking"
+              link="/work/matchmaking"
               image="/graph-talking.png"
             />
           </Grid>
@@ -87,7 +87,7 @@ export default function Home() {
             <Card
               name="Self-Driving Tank"
               description="A Self-Driving Tank that can deliver food anywhere on the Waterloo campus, using PID, computer vision and custom neural networks for pathfinding. Built from scratch for the Waterloo Software Engineering 1A Design Project."
-              link="https://github.com/rajansagarwal/self-driving-tank"
+              link="/work/tank"
               image="/boat.png"
             />
           </Grid>

@@ -40,6 +40,10 @@ main {
   }
 }
 
+a {
+  color:rgb(30, 30, 30);
+}
+
 .x-mobile {
   display: block;
 }
