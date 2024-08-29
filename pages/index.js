@@ -11,12 +11,12 @@ export default function Home() {
   // Define a list of cards with a category for each card
   const cards = [
     {
-      categories: ["Software", "Experiments"],
+      categories: ["Software", "Experiments", "LLM"],
       name: "The Human Simulation Lab",
       link: "https://humansimulation.ai",
       image: "/skyline.webp",
       description:
-        "Interning at Hitachi Rail to work on train automation and critical safety systems. Currently building the company's first simulation software using train logs and signal processing",
+        "A research collective at the University of Waterloo, focusing on human simulations and prediction.",
     },
     {
       categories: ["Software"],
@@ -48,7 +48,7 @@ export default function Home() {
       link: "https://www.youtube.com/watch?v=Vmupugz2M1s&t=1s&ab_channel=RajanAgarwal",
       image: "/portal-side.png",
       description:
-        "An AI Video Wearables to ambiently compute your life and store it in a knowledge graph for inference. Winner of Hack the North 2023 and presented at Socratica Symposium",
+        "An AI Video Wearable to ambiently compute your life and store it in a knowledge graph for inference. Winner of Hack the North 2023 and presented at Socratica Symposium",
     },
     {
       categories: ["Robotics", "Software", "Machine Learning", "Experiments"],
@@ -69,10 +69,10 @@ export default function Home() {
     {
       categories: ["Experiments", "Software", "Machine Learning"],
       name: "Audio Embeddings from Waveforms",
-      link: "https://shapeshift.space",
+      link: "/",
       image: "/image-9.png",
       description:
-        "Optimization of earthquake-resistant buildings using novel fourier algorithms, as well as policy analysis with RAG, reranking and LLMs.",
+        "Audio embeddings model to spatially represent sentiment from waveform spectrograms",
     },
     {
       categories: ["Experiments", "Software", "Machine Learning"],
@@ -92,7 +92,7 @@ export default function Home() {
     },{
       categories: ["Robotics", "Software", "Machine Learning"],
       name: "Self Driving Race Car Advisor",
-      link: "https://www.celeritasresearch.org/",
+      link: "https://celeritasresearch.org/",
       image: "/celeritas.jpg",
       description:
         "Technical advisor for a self-driving race car design team in California working with novel applications of Vision Transformers with Reinforcement Learning",
@@ -149,7 +149,7 @@ export default function Home() {
       name: "Knowledge Repositories",
       description:
         "A school-wide platform for club management and knowledge sharing, through repositories, content, announcements and quizzes.",
-      link: "https://github.com/rajansagarwal",
+      link: "/",
       image: "/homepage_aire_shots.png",
       description:
         "School-wide club management platform for knowledge sharing, through repositories, content, announcements and quizzes.",
