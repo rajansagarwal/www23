@@ -11,7 +11,7 @@ export default function Home() {
   // Define a list of cards with a category for each card
   const cards = [
     {
-      categories: ["Software", "Experiments", "LLM"],
+      categories: ["Software", "Experiments", "LLMs"],
       name: "The Human Simulation Lab",
       link: "https://humansimulation.ai",
       image: "/skyline.webp",
@@ -89,7 +89,8 @@ export default function Home() {
       image: "/watonomous.png",
       description:
         "A self-driving car design team in Waterloo. Working on the Motion Planning & Control team to convert directions into movement splines and motor controls.",
-    },{
+    },
+    {
       categories: ["Robotics", "Software", "Machine Learning"],
       name: "Self Driving Race Car Advisor",
       link: "https://celeritasresearch.org/",
@@ -168,7 +169,7 @@ export default function Home() {
 
   const categories = [
     // "Robotics",
-    "Software",
+    // "Software",
     "LLMs",
     "Machine Learning",
     "Experiments",
@@ -179,6 +180,11 @@ export default function Home() {
     <main style={{ padding: "2rem 2rem" }}>
       <Head>
         <title>Rajan Agarwal</title>
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <meta
           name="description"
           content="Rajan Agarwal is studying Software Engineering at theUniversity of Waterloo. He is currently working on AI for systems, both digital and embedded, to better understand and interact with our digital and physical world. He has built human simulations, visual reasoning for robotics, earthquake-resistant building optimization, self driving cars and written novels about philosophy."
