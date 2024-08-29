@@ -191,6 +191,7 @@ export default function Home() {
           rel="icon"
           href="https://em-content.zobj.net/thumbs/160/apple/81/seedling_1f331.png"
         />
+        <meta property="og:image" content="/shapeshift-talk.png" />
       </Head>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid.Container justify="center" gap={2}>
