@@ -215,7 +215,7 @@ export default function Home() {
         />
         <meta property="og:image" content="/shapeshift-talk.png" />
       </Head>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className="flex justify-center pb-16">
         <Grid.Container justify="center" gap={2}>
           <Grid xs={24} md={8} lg={6} xl={4}>
             <div className="flex flex-col justify-between w-full p-2 rounded-md">
@@ -224,9 +224,9 @@ export default function Home() {
                   Rajan Agarwal
                 </h2>
                 <p className="text-neutral-400 text-lg font-bricolage-grotesque w-[100%] max-w-[500px]">
-                  {/* AI for systems, both digital and embedded, to better understand
-                and interact with our digital and physical world. */}
-                  I build AI for the web & hardware.
+                  AI, both digital and embedded, to understand
+                and interact with our world.
+                  {/* I build AI for the web & hardware. */}
                 </p>
               </div>
               <div>
