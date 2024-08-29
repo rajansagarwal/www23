@@ -181,11 +181,11 @@ export default function Home() {
         <title>Rajan Agarwal</title>
         <meta
           name="description"
-          content="Rajan Agarwal is an 18-year-old Software Engineer studying at the University of Waterloo. He is currently working on AI for systems, both digital and embedded, to better understand and interact with our digital and physical world. He has built visual reasoning for robotics, earthquake-resistant building optimization, self driving cars and written novels about philosophy."
+          content="Rajan Agarwal is studying Software Engineering at theUniversity of Waterloo. He is currently working on AI for systems, both digital and embedded, to better understand and interact with our digital and physical world. He has built human simulations, visual reasoning for robotics, earthquake-resistant building optimization, self driving cars and written novels about philosophy."
         />
         <meta
           name="keywords"
-          content="Rajan Agarwal, Software Engineer, University of Waterloo, Shapeshift, earthquake-resistant buildings, Arterial, Camp Social, Hack Club, Summer 2024 jobs, Rajan, Agarwal, Toronto, Portal, Wearable, Tab"
+          content="Rajan Agarwal, Software Engineer, University of Waterloo, Human Simulation Lab, Skyline, Waterloo, Simulation, Shapeshift, Arterial, Camp Social, Hack Club, Summer 2024 jobs, Rajan, Agarwal, Toronto, Portal, Wearable, Tab"
         />
         <link
           rel="icon"
