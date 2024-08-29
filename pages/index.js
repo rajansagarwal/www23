@@ -193,7 +193,7 @@ export default function Home() {
   ];
 
   return (
-    <main style={{ padding: "2rem 2rem" }}>
+    <main className="p-4 md:p-[2rem]">
       <Head>
         <title>Rajan Agarwal</title>
         <meta name="theme-color" content="#000000" />
