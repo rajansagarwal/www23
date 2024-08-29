@@ -15,7 +15,7 @@ export default function Card({ name, description, tag, image, link }) {
         maxHeight: "23.5rem",
         position: "relative",
         cursor: "pointer",
-        display: "block", // Make sure the Link is block level to contain the absolutely positioned elements
+        display: "block",
       }}
       href={link}
       onMouseEnter={() => setHovered(true)}
@@ -32,8 +32,8 @@ export default function Card({ name, description, tag, image, link }) {
           objectFit: "cover",
           borderRadius: "5px",
           objectPosition: "center",
-          transition: "opacity 0.5s ease",
-          opacity: hovered ? 0.5 : 1,
+          transition: "opacity 0.2s ease",
+          opacity: hovered ? 0.4 : 1,
         }}
       />
       <div
@@ -48,17 +48,7 @@ export default function Card({ name, description, tag, image, link }) {
           display: hovered ? "block" : "none",
         }}
       >
-        {hovered && (
-          <Typewriter
-            words={description.split()}
-            loop={1}
-            cursor
-            cursorStyle="|"
-            typeSpeed={10}
-            deleteSpeed={500}
-            delaySpeed={1000}
-          />
-        )}
+        {hovered && <p>{description}</p>}
       </div>
       <div
         style={{

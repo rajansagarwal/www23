@@ -11,6 +11,14 @@ export default function Home() {
   // Define a list of cards with a category for each card
   const cards = [
     {
+      categories: ["Software", "Experiments"],
+      name: "The Human Simulation Lab",
+      link: "https://humansimulation.ai",
+      image: "/skyline.webp",
+      description:
+        "Interning at Hitachi Rail to work on train automation and critical safety systems. Currently building the company's first simulation software using train logs and signal processing",
+    },
+    {
       categories: ["Software"],
       name: "Train Automation & Signal Processing",
       link: "/work/train-automation",
@@ -47,70 +55,94 @@ export default function Home() {
       name: "Visual Reasoning for Robotics",
       link: "/",
       image: "/depth-distances.png",
-      description: "End-to-end neural networks for visual reasoning in dynamic, changing scenarios. We used depth and optical flow algorithms to predict the future of the environment.",
+      description:
+        "End-to-end neural networks for visual reasoning in dynamic, changing scenarios. We used depth and optical flow algorithms to predict the future of the environment.",
     },
     {
-      categories: ["Experimentation", "Software", "Machine Learning", "LLMs"],
+      categories: ["Experiments", "Software", "Machine Learning", "LLMs"],
       name: "Reverse Engineering Earthquakes",
       link: "https://shapeshift.space",
       image: "/shapeshift-talk.png",
-      description: "Optimization of earthquake-resistant buildings using novel fourier algorithms, as well as policy analysis with RAG, reranking and LLMs."
+      description:
+        "Optimization of earthquake-resistant buildings using novel fourier algorithms, as well as policy analysis with RAG, reranking and LLMs.",
+    },
+    {
+      categories: ["Experiments", "Software", "Machine Learning"],
+      name: "Audio Embeddings from Waveforms",
+      link: "https://shapeshift.space",
+      image: "/image-9.png",
+      description:
+        "Optimization of earthquake-resistant buildings using novel fourier algorithms, as well as policy analysis with RAG, reranking and LLMs.",
     },
     {
       categories: ["Experiments", "Software", "Machine Learning"],
       name: "Research Public Funding Model",
       link: "https://devpost.com/software/connexsci-20nrjy",
       image: "/connexsci_shots.png",
-      description: "Funding model for public investments in research, using knowledge graphs and distributed investments. Winner of Hack the North 2022."
+      description:
+        "Funding model for public investments in research, using knowledge graphs and distributed investments. Winner of Hack the North 2022.",
+    },
+    {
+      categories: ["Robotics", "Software", "Machine Learning"],
+      name: "Autonomous Car Design Team",
+      link: "https://www.watonomous.ca/",
+      image: "/watonomous.png",
+      description:
+        "A self-driving car design team in Waterloo. Working on the Motion Planning & Control team to convert directions into movement splines and motor controls.",
+    },{
+      categories: ["Robotics", "Software", "Machine Learning"],
+      name: "Self Driving Race Car Advisor",
+      link: "https://www.celeritasresearch.org/",
+      image: "/celeritas.jpg",
+      description:
+        "Technical advisor for a self-driving race car design team in California working with novel applications of Vision Transformers with Reinforcement Learning",
+    },
+    {
+      categories: ["LLMs", "Software", "Experiments"],
+      name: "Recommendation Engine",
+      link: "https://aviato.co",
+      image: "/aviato-dash.png",
+      description:
+        "A recommendation engine for hiring AI engineers, contract work with Aviato.",
     },
     {
       categories: ["LLMs", "Software", "Experiments"],
       name: "Generative UI",
       link: "https://tempolabs.ai",
       image: "/tempo.png",
-      description: "Worked with Tempo Labs to build generative UI from scratch."
-    },
-    {
-      categories: ["Robotics", "Software", "Machine Learning"],
-      name: "Self Driving Vehicle",
-      link: "https://www.watonomous.ca/",
-      image: "/watonomous.png",
-      description: "A self-driving car design team in Waterloo. Working on the Motion Planning & Control team."
-    },
-    {
-      categories: ["LLMs", "Software", "Experiments"],
-      name: "Recommendation Engine",
-      link: "https://aviato.co",
-      image: "/aviato.png",
-      description: "A recommendation engine for hiring AI engineers, contract work with Aviato."
+      description:
+        "Worked with Tempo Labs to build generative UI from scratch.",
     },
     {
       categories: ["Software", "Experiments"],
       name: "Offline Mesh Network",
       link: "https://github.com/rajansagarwal/zephyr",
       image: "/zephyr-pic.png",
-      description: "An offline mesh using multi peer connectivity to send encrypted messages between devices in your vicinity without internet."
+      description:
+        "An offline mesh using multi peer connectivity to send encrypted messages between devices in your vicinity without internet.",
     },
     {
       categories: ["Software"],
       name: "Restoring Digital Humanity",
       link: "https://www.linkedin.com/company/campsocial/",
       image: "/cs_shots.png",
-      description: "Internship to work on restroring humanity online. I worked primarily on the rewards platform, in Solidity, Ruby and Typescript."
+      description:
+        "Internship to work on restroring humanity online. I worked primarily on the rewards platform, in Solidity, Ruby and Typescript.",
     },
     {
-      categories: ["Experiments"],
+      categories: [],
       name: "Half Marathon",
       link: "/",
       image: "/half-marathon.png",
-      description: "Ran a half marathon the day before my midterms!"
+      description: "Ran a half marathon the day before my midterms!",
     },
     {
-      categories: ["Experiments"],
+      categories: [],
       name: "The Platonist: Fictional Novel",
       link: "https://www.amazon.ca/Platonist-Awake-Dreaming-Rajan-Agarwal/dp/B0BRDD3QLQ/ref=sr_1_1?crid=2QCBOE10VAEAW&keywords=the+platonist+rajan&qid=1706422953&s=books&sprefix=the+platonist+rajan%2Cstripbooks%2C505&sr=1-1",
       image: "https://z.rajan.sh/collection.png",
-      description: "Wrote a novel about a high school student in the context of the works of Plato."
+      description:
+        "Wrote a novel about a high school student in the context of the works of Plato.",
     },
     {
       categories: ["Software", "Experiments"],
@@ -119,7 +151,8 @@ export default function Home() {
         "A school-wide platform for club management and knowledge sharing, through repositories, content, announcements and quizzes.",
       link: "https://github.com/rajansagarwal",
       image: "/homepage_aire_shots.png",
-      description: "School-wide club management platform for knowledge sharing, through repositories, content, announcements and quizzes."
+      description:
+        "School-wide club management platform for knowledge sharing, through repositories, content, announcements and quizzes.",
     },
   ];
 
@@ -134,7 +167,7 @@ export default function Home() {
   };
 
   const categories = [
-    "Robotics",
+    // "Robotics",
     "Software",
     "LLMs",
     "Machine Learning",
@@ -163,12 +196,13 @@ export default function Home() {
         <Grid.Container justify="center" gap={2}>
           <Grid xs={24} md={16} lg={12} xl={12}>
             <div className="pb-10">
-              <h2 className="font-serif-variation mt-3 mb-5 font-bricolage-grotesque text-4xl text-white font-normal md:text-3xl lg:text-4xl">
+              <h2 className="font-serif-variation mt-3 font-bricolage-grotesque text-4xl text-white font-normal md:text-3xl lg:text-4xl">
                 Rajan Agarwal
               </h2>
               <p className="text-neutral-400 text-lg font-bricolage-grotesque w-[100%] max-w-[500px]">
                 AI for systems, both digital and embedded, to better understand
                 and interact with our digital and physical world.
+                {/* I build AI for the web & hardware. */}
               </p>
               <p className="text-neutral-400 text-sm font-bricolage-grotesque">
                 <a
@@ -180,7 +214,7 @@ export default function Home() {
                   Software Engineering @ Waterloo.
                 </a>
                 <br />
-                Train Automation @ Hitachi Rail. World Modelling @ Watonomous
+                Currently @ The Human Simulation Lab, Watonomous
               </p>
               {categories.map((category) => (
                 <button
