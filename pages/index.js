@@ -91,6 +91,14 @@ export default function Home() {
         "A self-driving car design team in Waterloo. Working on the Motion Planning & Control team to convert directions into movement splines and motor controls.",
     },
     {
+      categories: ["Software", "Machine Learning", "Experiments"],
+      name: "At-home AI Clusters",
+      link: "https://github.com/exo-explore/exo",
+      image: "/exo.jpeg",
+      description:
+        "Implementing PrivateLORA for Low Rank local LLM fine-tuning on at-home clusters using distributed compute from Macbooks, iPhones, iPads and Apple Watches.",
+    },
+    {
       categories: ["Robotics", "Software", "Machine Learning"],
       name: "Self Driving Race Car Advisor",
       link: "https://celeritasresearch.org/",
@@ -107,20 +115,20 @@ export default function Home() {
         "A recommendation engine for hiring AI engineers, contract work with Aviato.",
     },
     {
-      categories: ["LLMs", "Software", "Experiments"],
-      name: "Generative UI",
-      link: "https://tempolabs.ai",
-      image: "/tempo.png",
-      description:
-        "Worked with Tempo Labs to build generative UI from scratch.",
-    },
-    {
       categories: ["Software", "Experiments"],
       name: "Offline Mesh Network",
       link: "https://github.com/rajansagarwal/zephyr",
       image: "/zephyr-pic.png",
       description:
         "An offline mesh using multi peer connectivity to send encrypted messages between devices in your vicinity without internet.",
+    },
+    {
+      categories: ["LLMs", "Software", "Experiments"],
+      name: "Generative UI",
+      link: "https://tempolabs.ai",
+      image: "/tempo.png",
+      description:
+        "Worked with Tempo Labs to build generative UI from scratch.",
     },
     {
       categories: ["Software"],
@@ -201,39 +209,47 @@ export default function Home() {
       </Head>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid.Container justify="center" gap={2}>
-          <Grid xs={24} md={16} lg={12} xl={12}>
-            <div className="pb-10">
-              <h2 className="font-serif-variation mt-3 font-bricolage-grotesque text-4xl text-white font-normal md:text-3xl lg:text-4xl">
-                Rajan Agarwal
-              </h2>
-              <p className="text-neutral-400 text-lg font-bricolage-grotesque w-[100%] max-w-[500px]">
-                AI for systems, both digital and embedded, to better understand
-                and interact with our digital and physical world.
-                {/* I build AI for the web & hardware. */}
-              </p>
-              <p className="text-neutral-400 text-sm font-bricolage-grotesque">
-                <a
-                  className="text-neutral-300 fade-in-3"
-                  href="https://se-webring.xyz/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Software Engineering @ Waterloo.
-                </a>
-                <br />
-                Currently @ The Human Simulation Lab, Watonomous
-              </p>
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  className={`p-2 mr-2 mb-2 rounded-md hover:bg-zinc-800 ${
-                    filters.includes(category) ? "bg-zinc-800" : "bg-zinc-900"
-                  }`}
-                  onClick={() => handleFilterChange(category)}
-                >
-                  {category}
-                </button>
-              ))}
+          <Grid xs={24} md={8} lg={6} xl={4}>
+            <div className="flex flex-col justify-between w-full p-2 rounded-md">
+              <div>
+                <h2 className="font-serif-variation mt-3 font-bricolage-grotesque text-4xl text-white font-normal md:text-3xl lg:text-4xl">
+                  Rajan Agarwal
+                </h2>
+                <p className="text-neutral-400 text-lg font-bricolage-grotesque w-[100%] max-w-[500px]">
+                  {/* AI for systems, both digital and embedded, to better understand
+                and interact with our digital and physical world. */}
+                  I build AI for the web & hardware.
+                </p>
+              </div>
+              <div>
+                <p className="text-neutral-400 text-sm font-bricolage-grotesque">
+                  <a
+                    className="text-neutral-300 fade-in-3"
+                    href="https://se-webring.xyz/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Software Engineering @ Waterloo.
+                  </a>
+                  <br />
+                  Currently @ The Human Simulation Lab, Watonomous
+                </p>
+                <div>
+                  {categories.map((category) => (
+                    <button
+                      key={category}
+                      className={`p-2 mr-2 mb-2 rounded-md hover:bg-zinc-800 ${
+                        filters.includes(category)
+                          ? "bg-zinc-800"
+                          : "bg-zinc-900"
+                      }`}
+                      onClick={() => handleFilterChange(category)}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </Grid>
 
