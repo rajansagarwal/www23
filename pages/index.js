@@ -36,7 +36,7 @@ export default function Home() {
     },
     {
       categories: ["Robotics", "Software", "Machine Learning"],
-      name: "Self-Driving Tank",
+      name: "Self-Driving On Campus Food Delivery",
       link: "/work/tank",
       image: "/boat.png",
       description:
@@ -99,6 +99,14 @@ export default function Home() {
         "Implementing PrivateLORA for Low Rank local LLM fine-tuning on at-home clusters using distributed compute from Macbooks, iPhones, iPads and Apple Watches.",
     },
     {
+      categories: ["Software", "Machine Learning", "Experiments"],
+      name: "Speaker Diarization for Long-form Audio",
+      link: "https://kino.ai",
+      image: "/kino.png",
+      description:
+        "SOTA Speaker Diarization to identify unique speakers in long-form audio using custom embeddings.",
+    },
+    {
       categories: ["Robotics", "Software", "Machine Learning"],
       name: "Self Driving Race Car Advisor",
       link: "https://celeritasresearch.org/",
@@ -138,13 +146,13 @@ export default function Home() {
       description:
         "Internship to work on restroring humanity online. I worked primarily on the rewards platform, in Solidity, Ruby and Typescript.",
     },
-    {
-      categories: [],
-      name: "Half Marathon",
-      link: "/",
-      image: "/half-marathon.png",
-      description: "Ran a half marathon the day before my midterms!",
-    },
+    // {
+    //   categories: [],
+    //   name: "Half Marathon",
+    //   link: "/",
+    //   image: "/half-marathon.png",
+    //   description: "Ran a half marathon the day before my midterms!",
+    // },
     {
       categories: [],
       name: "The Platonist: Fictional Novel",
