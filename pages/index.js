@@ -242,7 +242,7 @@ export default function Home() {
                   <br />
                   Currently @ The Human Simulation Lab, Watonomous
                 </p>
-                <div>
+                {/* <div>
                   {categories.map((category) => (
                     <button
                       key={category}
@@ -256,7 +256,7 @@ export default function Home() {
                       {category}
                     </button>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </Grid>
